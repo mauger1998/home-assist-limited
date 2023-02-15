@@ -24,6 +24,7 @@
     box-sizing:border-box;
     scroll-behavior: smooth;
     font-family:"Acumin Pro", sans-serif;
+
 }
 button {
     padding:0.5rem 1rem;
@@ -778,3 +779,104 @@ footer .wrapper {
         font-size:var(--mobile-text)
     }
 }
+
+/********* FAQ *********/
+
+.faq-section {
+    background-color:var(--blue);
+    color:white;
+}
+.faq-section .wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4rem;
+}
+.faq-titles {
+    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:1rem;
+}
+.faq-titles h2 {
+    font-size:var(--heading-two)
+}
+.faq-titles p {
+    width:50%;
+    font-size:var(--sub-heading);
+}
+.accordian {
+    background-color:#02284c;
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    width:75%;
+    border-radius:0.5rem;
+    height:max-content;
+    color:white;
+
+}
+.accordian a {
+    color:white;
+}
+.accordian-item {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1rem;
+    height:max-content;
+    cursor:pointer;
+
+
+}
+.accordian-link {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.accordian-link p {
+    color:white;
+    padding:0.5rem;
+    font-size:20px;
+    
+}
+.remove {
+    display:none;
+}
+.answer {
+    overflow:hidden;
+    max-height:0;
+    position:relative;
+    transition:0.5s;
+
+
+}
+.answer::before {
+    content:"";
+    position: absolute;
+    width:0.4rem;
+    height:90%;
+    background-color:white;
+    top:50%;
+    left:0;
+    transform:translateY(-50%)
+}
+.answer p{
+    padding-inline:2rem;
+
+}
+
+.active {
+    overflow:hidden;
+    max-height:20rem;
+    transition:0.5s;
+}
+
+
+
+
