@@ -164,12 +164,12 @@ main .wrapper {
     gap:1rem;
     margin-top:1rem;
 }
-.main-button-container button:nth-child(1) {
+.main-button-container a:nth-child(1) button {
     background-color:var(--blue);
     color:white;
     padding-inline:2rem;
 }
-.main-button-container button:nth-child(2) {
+.main-button-container a:nth-child(2) button {
     background-color:transparent;
     color:var(--blue);
     border:2px solid var(--blue);
@@ -315,6 +315,7 @@ main .wrapper {
         flex-direction: column;
         width:100%;
     }
+    .main-button-container a,
     .main-button-container button {
         width:100%;
     }

@@ -9,6 +9,12 @@
 
 
     <!-- Links -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
     <link rel="shortcut icon" href="Asset 11.svg" type="image/x-icon">
@@ -143,11 +149,31 @@
                 <h2>Latest News</h2>
                 <p>CHECK OUT OUR LATEST UPDATES</p>
             </div>
-            <div class="news-slider">
-                <img src="halo-png/home-help-assesment.png" alt="Our latest home help news updates for HALO">
-                <img src="halo-png/home-help-hold-hands.png" alt="Our latest home help news updates for HALO">
-                <img src="halo-png/home-help-shopping.png" alt="Our latest home help news updates for HALO">
-            </div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">     
+                    <img src="halo-png/home-help-assesment.png" alt="Our latest home help news updates for HALO">
+                  </div>
+                  <div class="swiper-slide">     
+                    <img src="halo-png/home-help-hold-hands.png" alt="Our latest home help news updates for HALO">
+                  </div>
+                  <div class="swiper-slide">     
+                    <img src="halo-png/home-help-shopping.png" alt="Our latest home help news updates for HALO">
+                  </div>
+                  
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                
+              </div>
+            
         </div>
     </section>
     <section id="contact" class="contact-section">
