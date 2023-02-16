@@ -12,9 +12,16 @@
 
 
 
+   
     <!-- Links -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="about.css">
-    <script defer src="index.js"></script>
+    <script defer src="about.js"></script>
     <link rel="shortcut icon" href="../Asset 11.svg" type="image/x-icon">
 
 
@@ -126,11 +133,31 @@
                 <h2>Meet the Team</h2>
                 <p>MEET OUR TEAM OF HOME CARE PROFFESIONALS</p>
             </div>
-            <div class="news-slider">
-                <img src="../halo-png/halo-png-two/home-help-team.png" alt="Our latest home help news updates for HALO">
-                <img src="../halo-png/halo-png-two/help-at-home-team.png" alt="Our latest home help news updates for HALO">
-                <img src="../halo-png/halo-png-two/home-help-team-member.png" alt="Our latest home help news updates for HALO">
-            </div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">     
+                    <img src="../halo-png/halo-png-two/home-help-team.png" alt="Our latest home help news updates for HALO">
+                  </div>
+                  <div class="swiper-slide">     
+                    <img src="../halo-png/halo-png-two/help-at-home-team.png" alt="Our latest home help news updates for HALO">
+                  </div>
+                  <div class="swiper-slide">     
+                    <img src="../halo-png/halo-png-two/home-help-team-member.png" alt="Our latest home help news updates for HALO">
+                  </div>
+                  
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                
+              </div>
+            
         </div>
     </section>
 
