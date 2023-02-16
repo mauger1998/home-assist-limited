@@ -801,7 +801,7 @@ footer .wrapper {
     gap:1rem;
 }
 .faq-titles h2 {
-    font-size:var(--heading-two)
+    font-size:var(--heading-two) !important;
 }
 .faq-titles p {
     width:50%;
@@ -845,8 +845,22 @@ footer .wrapper {
     font-size:20px;
     
 }
+
+
 .remove {
     display:none;
+    
+
+}
+.gone {
+    display:none;
+    
+
+}
+.here {
+    display:block;
+    
+
 }
 .answer {
     overflow:hidden;
@@ -874,7 +888,7 @@ footer .wrapper {
 .active {
     overflow:hidden;
     max-height:20rem;
-    transition:0.5s;
+    transition:2.5s;
 }
 
 

@@ -161,12 +161,12 @@ main .wrapper {
     gap:1rem;
     margin-top:1rem;
 }
-.main-button-container button:nth-child(1) {
+.main-button-container a:nth-child(1) button {
     background-color:var(--blue);
     color:white;
     padding-inline:2rem;
 }
-.main-button-container button:nth-child(2) {
+.main-button-container a:nth-child(2) button {
     background-color:transparent;
     color:var(--blue);
     border:2px solid var(--blue);
@@ -806,7 +806,7 @@ footer img {
 footer img:nth-child(2n) {
     width:30px;
 }
-.footer-left > img {
+.footer-left > a img {
     width:150px;
 }
 footer .wrapper {
@@ -830,7 +830,7 @@ footer .wrapper {
 .address p:nth-child(1) {
     font-weight:700;
 }
-.contact p:nth-child(1) {
+.contact > p {
     font-weight:700;
 }
 .footer-right ul{
