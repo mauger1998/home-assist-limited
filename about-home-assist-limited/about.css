@@ -597,7 +597,7 @@ footer img {
 footer img:nth-child(2n) {
     width:30px;
 }
-.footer-left > img {
+.footer-left > a img {
     width:150px;
 }
 footer .wrapper {
@@ -621,7 +621,7 @@ footer .wrapper {
 .address p:nth-child(1) {
     font-weight:700;
 }
-.contact p:nth-child(1) {
+.contact > p:nth-child(1) {
     font-weight:700;
 }
 .footer-right ul{
