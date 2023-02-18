@@ -23,7 +23,7 @@
     padding:0;
     box-sizing:border-box;
     scroll-behavior: smooth;
-    font-family:"Acumin Pro", sans-serif;
+    font-family:"Roboto", sans-serif;
 
 }
 button {
@@ -76,6 +76,9 @@ header {
 .header-wrapper .menu {
     width:50px;
     display:none;
+}
+.logo-container img {
+    width:125px;
 }
 nav ul {
     display:flex;
@@ -130,9 +133,9 @@ main .wrapper {
     width:50%;
 }
 .main-right {
-    background-image:var(--hero-image-gradient), url(../halo-png/halo-png-three/hero.png);
+    background-image:var(--hero-image-gradient), url(../halo-png/halo-png-three/caleb-ekeroth-wSBQFWF77lI-unsplash.jpg);
     background-size:cover;
-    background-position: center;
+    background-position: center bottom;
 
     background-repeat:no-repeat;
     padding-block:25rem;
@@ -381,7 +384,7 @@ main .wrapper {
 }
 /****/
 .second-left {
-    background-image:linear-gradient(to left, #FFFFFF, #FFFFFF00 5%), linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-three/halo.png);
+    background-image:linear-gradient(to left, #FFFFFF, #FFFFFF00 5%), linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-three/andre-ouellet-FzECg2eNhj4-unsplash.jpg);
     width:50%;
     background-size:cover;
     background-position:center;
@@ -404,7 +407,7 @@ main .wrapper {
         width:100%;
     }
     .second-left {
-        padding-block:14rem;
+        padding-block:18rem;
     }
     
 }
@@ -480,7 +483,7 @@ main .wrapper {
 }
 /****/
 .third-right {
-    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 5%), linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-three/family.png);
+    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 5%), linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-three/remi-walle-UOwvwZ9Dy6w-unsplash.jpg);
     width:50%;
     background-size:cover;
     padding-block:14rem;
@@ -498,7 +501,7 @@ main .wrapper {
         padding-inline:4rem;
     }
     .third-right {
-        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-three/family.png);
+        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-three/remi-walle-UOwvwZ9Dy6w-unsplash.jpg);
         background-size:cover ;
         background-position: center;
 
@@ -832,6 +835,7 @@ footer .wrapper {
     cursor:pointer;
 
 
+
 }
 .accordian-link {
     width:100%;
@@ -865,8 +869,9 @@ footer .wrapper {
 }
 .answer {
     overflow:hidden;
-    max-height:0;
+    max-height:0 ;
     position:relative;
+    background-color:var(--blue);
     transition:0.5s;
 
 

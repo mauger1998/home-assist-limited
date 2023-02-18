@@ -3,6 +3,8 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
     spaceBetween:10,
+    autoplay: true,
+    speed:400,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',

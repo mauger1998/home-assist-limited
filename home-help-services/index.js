@@ -10,3 +10,4 @@ accordianItem.forEach((item, index) => {
         remove[index].classList.toggle("here")
     })
 })
+
