@@ -704,8 +704,11 @@ main .wrapper {
     font-size:var(--sub-heading);
 
 }
+
 .swiper-slide {
     position:relative !important;
+   
+    
 }
 .swiper-slide p{
     font-weight:700;
@@ -714,15 +717,22 @@ main .wrapper {
     text-align:left;
     
 }
-
+.latest-news-section .wrapper {
+    overflow-x:hidden;
+}
 
 .swiper {
     width: 35%;
     overflow:visible;
-  }
-  .swiper img {
+   
+}
+
+
+.swiper img {
     width:100%;
-  }
+    aspect-ratio:1/1.1;
+    object-fit:cover;
+}
 
 
 @media (max-width:500px) {

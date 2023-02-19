@@ -892,9 +892,9 @@ footer .wrapper {
 }
 
 .active {
-    overflow:hidden;
-    max-height:20rem;
-    transition:2.5s;
+    overflow:hidden !important;
+    max-height:20rem !important;
+    transition:2.5s !important;
 }
 
 
