@@ -370,6 +370,17 @@ main .wrapper {
 }
 
 /************ Second Section *********/
+.intro-section {
+    background-color: var(--blue);
+    color:white;
+}
+.intro-section p {
+    font-weight:300;
+    font-size:var(--sub-heading);
+}
+/************ Second Section *********/
+
+/************ Second Section *********/
 
 .second-section .wrapper {
     display:flex;
