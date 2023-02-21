@@ -22,18 +22,6 @@ const swiper = new Swiper('.swiper', {
   });
 
 
-  // gsap.registerPlugin(ScrollTrigger);
-
-  // gsap.to(".second-section h2", {
-  //     scrollTrigger: {
-  //         trigger: ".second-section h2",
-  //         start:"top bottom",
-         
-          
-  //     },
-  //     y:0,
-  //     opacity:1,
-  // })
 
 
 

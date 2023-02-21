@@ -369,16 +369,6 @@ main .wrapper {
     }
 }
 
-/************ Second Section *********/
-.intro-section {
-    background-color: var(--blue);
-    color:white;
-}
-.intro-section p {
-    font-weight:300;
-    font-size:var(--sub-heading);
-}
-/************ Second Section *********/
 
 /************ Second Section *********/
 
@@ -392,8 +382,7 @@ main .wrapper {
 
 .second-section h2 {
     font-size:var(--heading-two);
-    transform:translateY(4rem);
-    opacity:0;
+   
 }
 
 .second-right {
