@@ -66,9 +66,11 @@ fetch(URLFOUR)
         const thirdHeading = document.querySelector(".third-right h2")
         const thirdSubHeading = document.querySelector(".third-right p:nth-of-type(1)")
         const thirdText = document.querySelector(".third-right p:nth-of-type(2)")
+        const thirdSecondText = document.querySelector(".third-right p:nth-of-type(3)")
 
         thirdHeading.textContent = result[0].heading
         thirdSubHeading.textContent = result[0].subHeading
         thirdText.textContent = result[0].text
+        thirdSecondText.textContent = result[0].textTwo
       
 })

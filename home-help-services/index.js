@@ -132,11 +132,13 @@ fetch(URLSIX)
         const fifthSubHeading = document.querySelector(".fifth-right > p:nth-of-type(1)")
         const fifthTextOne = document.querySelector(".fifth-right > p:nth-of-type(2)")
         const fifthTextTwo = document.querySelector(".fifth-right > p:nth-of-type(3)")
+        const fifthTextThree = document.querySelector(".fifth-right > p:nth-of-type(4)")
 
         fifthHeading.textContent = result[0].heading
         fifthSubHeading.textContent = result[0].subHeading
         fifthTextOne.textContent = result[0].textOne
         fifthTextTwo.textContent = result[0].textTwo
+        fifthTextThree.textContent = result[0].textThree
       
 })
 
