@@ -150,52 +150,52 @@ main .wrapper {
 }
 .main-left h1 {
     font-size:var(--heading-one);
-    transform:translateY(6rem);
+    /* transform:translateY(6rem);
     opacity:0;
-    animation:fade-up 1s forwards ease;
+    animation:fade-up 1s forwards ease; */
 }
-@keyframes fade-up {
+/* @keyframes fade-up {
     to {
         transform: translateY(0);
         opacity:1;
     }
-}
+} */
 .main-left-titles p {
     font-size:var(--text);
     letter-spacing:1rem;
     font-weight:200 !important;
     font-family:"roboto";
-    animation:fade-up 1s forwards ease;
+    /* animation:fade-up 1s forwards ease;
     animation-delay:250ms;
     transform:translateY(6rem);
-    opacity:0;
+    opacity:0; */
 }
 .main-left > p {
     font-size:var(--text);
     font-weight:200;
     font-family:"roboto";
     width:90%;
-    animation:fade-up 1s forwards ease;
+    /* animation:fade-up 1s forwards ease;
     animation-delay:750ms;
     transform:translateY(6rem);
-    opacity:0;
+    opacity:0; */
 }
 .main-button-container {
     display:flex;
     align-items: center;
     gap:1rem;
     margin-top:1rem;
-    animation:fade-in 1s forwards ease;
+    /* animation:fade-in 1s forwards ease;
     animation-delay:1250ms;
     transform:translateX(-2rem);
-    opacity:0;
+    opacity:0; */
 }
-@keyframes fade-in {
+/* @keyframes fade-in {
     to {
         transform: translateX(0);
         opacity:1;
     }
-}
+} */
 .main-button-container a:nth-child(1) button {
     background-color:var(--blue);
     color:white;

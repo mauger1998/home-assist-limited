@@ -52,6 +52,94 @@ fetch(URL)
                         })
 
 
+  let QUERYTWO = encodeURIComponent(`*[_type == 'servicesHeroSection']`);
+
+  let URLTWO = `https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'servicesHeroSection'%5D`;
+
+  fetch(URLTWO)
+        .then((res) => res.json())
+        .then(({ result }) => {
+          const heroHeading = document.querySelector("h1")
+          const heroText = document.querySelector(".main-left > p")
+          console.log(result)
+
+          heroHeading.textContent = result[0].heading
+          heroText.textContent = result[0].text
+        
+})
+
+
+let QUERYTHREE = encodeURIComponent(`*[_type == 'servicesSecondSection']`);
+
+let URLTHREE = `https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'servicesSecondSection'%5D`;
+
+fetch(URLTHREE)
+      .then((res) => res.json())
+      .then(({ result }) => {
+        const secondHeading = document.querySelector(".second-section h2")
+        const secondSubText = document.querySelector(".second-section p:nth-of-type(1)")
+        const secondText = document.querySelector(".second-section p:nth-of-type(2)")
+        
+
+        secondHeading.textContent = result[0].heading
+        secondSubText.textContent = result[0].subHeading
+        secondText.textContent = result[0].text
+      
+})
+
+
+
+let QUERYFOUR = encodeURIComponent(`*[_type == 'servicesThirdSection']`);
+
+let URLFOUR = `https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'servicesThirdSection'%5D`;
+
+fetch(URLFOUR)
+      .then((res) => res.json())
+      .then(({ result }) => {
+        const thirdSubHeading = document.querySelector(".third-left p:nth-of-type(1)")
+        const thirdText = document.querySelector(".third-left p:nth-of-type(2)")
+
+        thirdSubHeading.textContent = result[0].subHeading
+        thirdText.textContent = result[0].text
+      
+})
+
+let QUERYFIVE = encodeURIComponent(`*[_type == 'servicesFourthSection']`);
+
+let URLFIVE = `https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'servicesFourthSection'%5D`;
+
+fetch(URLFIVE)
+      .then((res) => res.json())
+      .then(({ result }) => {
+        const fourthHeading = document.querySelector(".fourth-left h2")
+        const fourthText = document.querySelector(".fourth-left > p")
+
+        fourthHeading.textContent = result[0].heading
+        fourthText.textContent = result[0].text
+      
+})
+
+
+
+let QUERYSIX = encodeURIComponent(`*[_type == 'howDoesItWork']`);
+
+let URLSIX = `https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'howDoesItWork'%5D`;
+
+fetch(URLSIX)
+      .then((res) => res.json())
+      .then(({ result }) => {
+        const fifthHeading = document.querySelector(".fifth-right h2")
+        const fifthSubHeading = document.querySelector(".fifth-right > p:nth-of-type(1)")
+        const fifthTextOne = document.querySelector(".fifth-right > p:nth-of-type(2)")
+        const fifthTextTwo = document.querySelector(".fifth-right > p:nth-of-type(3)")
+
+        fifthHeading.textContent = result[0].heading
+        fifthSubHeading.textContent = result[0].subHeading
+        fifthTextOne.textContent = result[0].textOne
+        fifthTextTwo.textContent = result[0].textTwo
+      
+})
+
 
 
 
