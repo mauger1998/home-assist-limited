@@ -32,7 +32,7 @@ const swiper = new Swiper('.swiper', {
         .then((res) => res.json())
         .then(({ result }) => {
           const heroHeading = document.querySelector("h1")
-          const heroText = document.querySelector(".main-left > p")
+          const heroText = document.querySelector("main .wrapper p:nth-of-type(2)")
           console.log(result)
 
           heroHeading.textContent = result[0].heading
@@ -63,20 +63,7 @@ const swiper = new Swiper('.swiper', {
 
 
 
-  let QUERYTHREE = encodeURIComponent(`*[_type == 'homeThirdSection']`);
 
-  let URLTHREE = `https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'homeThirdSection'%5D`;
-
-  fetch(URLTHREE)
-        .then((res) => res.json())
-        .then(({ result }) => {
-          const thirdHeading = document.querySelector(".third-left h2")
-          const thirdText = document.querySelector(".third-left p")
-
-          thirdHeading.textContent = result[0].heading
-          thirdText.textContent = result[0].text
-        
-})
 
 
 
