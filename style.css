@@ -136,7 +136,8 @@ main .wrapper {
     width:50%;
 }
 .main-right {
-    background-image:var(--hero-image-gradient), url(halo-png/happy-couple-home-health-care.png);
+    /* background-image:var(--hero-image-gradient), url(halo-png/happy-couple-home-health-care.png); */
+    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00, 20%), url(halo-png/happy-couple-home-health-care.png)
     background-size:cover;
     background-repeat:no-repeat;
     padding-block:25rem;
