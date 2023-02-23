@@ -788,6 +788,7 @@ footer .wrapper {
 .bye-section .wrapper h2 {
    text-align:center;
    width:50%;
+   color:var(--blue);
    line-height:1.75;
    font-size:var(--mobile-heading-two);
 }
