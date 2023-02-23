@@ -251,7 +251,7 @@ main .wrapper p:nth-of-type(2) {
     }
 }
 /*********** 1.5 *******************/
-.introduction-section .wrapper {
+.introduction-section  {
     background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 80%),url(halo-png/pexels-antoni-shkraba-7345465.jpg);
     background-size:cover;
     background-repeat: no-repeat;

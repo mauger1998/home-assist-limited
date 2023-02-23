@@ -486,14 +486,17 @@ main .wrapper p:nth-of-type(2) {
     }
 }
 /******* Services Cards *****/
+.first-section {
+    background-image: linear-gradient(to top, #FFFFFF, #FFFFFF00 40%),  linear-gradient(to bottom, #FFFFFF, #FFFFFF00 40%), url(../halo-png/home-helper-makes-tea.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
 .first-section .wrapper {
     display:flex;
     flex-direction: column;
     align-items: flex-start;
     gap:6rem;
-    background-image: linear-gradient(to top, #FFFFFF, #FFFFFF00 40%),  linear-gradient(to bottom, #FFFFFF, #FFFFFF00 40%), url(../halo-png/home-helper-makes-tea.png);
-    background-size:cover;
-    background-repeat:no-repeat;
+   
     padding-block:12rem;
 }
 .service-cards-titles h2 {
