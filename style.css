@@ -181,6 +181,14 @@ main .wrapper p:nth-of-type(2) {
         width:100% !important;
     }
 }
+@media (max-width:700px) {
+    main .wrapper {
+        padding-inline:2rem;
+    }
+   
+   
+
+}
 @media (max-width:681px) {
     main .wrapper p:nth-of-type(1) {
         font-size:15px;
@@ -278,6 +286,50 @@ main .wrapper p:nth-of-type(2) {
     
     
 }
+@media (max-width:1187px) {
+    .introduction-section p {
+        width:70% !important;
+       
+    }
+}
+@media (max-width:899px) {
+    .introduction-section p {
+        width:80% !important;
+       
+    }
+}
+@media (max-width:782px) {
+    .introduction-section p {
+        width:90% !important;
+       
+    }
+}
+@media(max-width:700px) {
+    .introduction-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:647px) {
+    .introduction-section p {
+        width:100% !important;
+       
+    }
+}
+@media (max-width:500px) {
+    .introduction-section p:nth-of-type(1) {
+        font-size:var(--mobile-sub-heading);
+    }
+    .introduction-section h2 {
+        font-size:var(--mobile-heading-two);
+    }
+    .introduction-section p {
+        font-size:var(--mobile-text)
+       
+    }
+    .introduction-section .wrapper {
+        padding-inline:1rem;
+    }
+}
 
 /************ Second Section *********/
 
@@ -318,7 +370,7 @@ main .wrapper p:nth-of-type(2) {
 }
 /****/
 .second-left {
-    background-image:linear-gradient(to left, #FFFFFF, #FFFFFF00 5%), linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(halo-png/happy-healthy-at-home.png);
+    background-image:linear-gradient(to left, #FFFFFF, #FFFFFF00 20%), linear-gradient(to top, #FFFFFF, #FFFFFF00 20%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 20%) , url(halo-png/happy-healthy-at-home.png);
     width:50%;
     background-size:cover;
     padding-block:22rem;
@@ -498,6 +550,39 @@ main .wrapper p:nth-of-type(2) {
     font-size:var(--sub-heading);
     font-weight:700;
 }
+@media (max-width:1003px) {
+    .news-cards {
+       flex-direction: column;
+    }
+    .news-card {
+        width:100%;
+    }
+}
+@media (max-width:700px) {
+    .latest-news-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .latest-news-section .wrapper {
+        padding-inline:1rem;
+    }
+    .news-card p:nth-of-type(1) {
+        font-size:var(--mobile-sub-heading);
+    }
+    .news-card p:nth-of-type(2) {
+        font-size:var(--mobile-text);
+    }
+    .news-card button {
+        font-size:var(--mobile-button-text);
+    }
+    .news-titles h2 {
+        font-size:var(--mobile-heading-two)
+    }
+    .news-titles p {
+        font-size:var(--mobile-sub-heading);
+    }
+}
 /**********************/
 
 .contact-section .wrapper {
@@ -601,13 +686,21 @@ form button {
         font-size:var(--sub-heading);
     }
 }
+@media (max-width:700px) {
+    .contact-section .wrapper {
+        padding-inline:2rem;
+    }
+}
 @media (max-width:500px) {
     
     .contact-left h2 {
-        font-size:var(--mobile-heading-two);
+        font-size:var(--mobile-heading-two) ;
     }
     .contact-left p {
         font-size:var(--mobile-sub-heading);
+    }
+    .contact-section .wrapper {
+        padding-inline:1rem;
     }
 }
 /**********************/
@@ -677,5 +770,18 @@ footer .wrapper {
     .contact p{
         font-size:var(--mobile-text)
     }
+}
+
+/********************/
+.bye-section .wrapper {
+    padding-block:12rem;
+    display:flex;
+    justify-content: center;
+}
+.bye-section .wrapper h2 {
+   text-align:center;
+   width:50%;
+   line-height:1.75;
+   font-size:var(--mobile-heading-two);
 }
 
