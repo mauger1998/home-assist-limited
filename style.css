@@ -585,6 +585,11 @@ main .wrapper p:nth-of-type(2) {
 }
 /**********************/
 
+.contact-section {
+    background-color:var(--blue);
+    color:white;
+}
+
 .contact-section .wrapper {
     display:flex;
     align-items: center;
@@ -603,6 +608,7 @@ main .wrapper p:nth-of-type(2) {
     font-size:var(--sub-heading);
     font-weight:500;
     font-family:"roboto";
+    color:white;
 }
 .contact-left {
     display:flex;
@@ -640,8 +646,9 @@ textarea {
     padding:0.5rem;
 }
 form button {
-    background-color:var(--blue);
-    color:white;
+    background-color:white;
+    color:var(--blue);
+    border:2px solid white;
 }
 @media (max-width:1119px) {
     .contact-left h2 {
