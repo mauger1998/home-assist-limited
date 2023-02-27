@@ -1,5 +1,5 @@
 :root {
-    --blue: #043E74;
+    --blue: #000032;
     --heading-two: 50px;
     --sub-heading: 25px;
     --text: 18px;
@@ -98,7 +98,7 @@ nav {
     justify-content: center;
     gap:2rem;
 }
-@media (max-width:850px) {
+@media (max-width:1050px) {
     nav {
         display:none;
     }
@@ -203,6 +203,9 @@ main .wrapper p:nth-of-type(2) {
          padding-top:27rem;
          
      }
+     .tag {
+        letter-spacing:0.4rem !important;
+     }
  }
  @media (max-width:555px) {
      h1 {
@@ -235,6 +238,9 @@ main .wrapper p:nth-of-type(2) {
      main {
          background-position-x:-8rem;
      }
+     .tag {
+        letter-spacing:0.25rem !important;
+     }
  }
  @media (max-width:440px) {
      main {
@@ -247,202 +253,8 @@ main .wrapper p:nth-of-type(2) {
          letter-spacing:0.5rem;
      }
  }
-/************ Second Section *********/
 
-.second-section .wrapper {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap:2rem;
-    padding-left:0;
-}
 
-.second-section h2 {
-    font-size:var(--heading-two);
-}
-
-.second-right {
-    display:flex;
-    flex-direction: column;
-    gap:1rem;
-    align-items: flex-start;
-}
-.second-section p {
-    font-size:var(--text);
-    font-weight:200;
-    font-family:"roboto"
-}
-.second-section p:nth-of-type(1) {
-    font-size:var(--sub-heading);
-    line-height:1.25;
-    font-weight:500;
-
-}
-.second-right button {
-    background-color:var(--blue);
-    color:white;
-    margin-top:1rem;
-}
-/****/
-.second-left {
-    background-image:linear-gradient(to left, #FFFFFF, #FFFFFF00 5%), linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-three/andre-ouellet-FzECg2eNhj4-unsplash.jpg);
-    width:50%;
-    background-size:cover;
-    background-position:center;
-    padding-block:22rem;
-}
-.second-right {
-    width:50%;
-}
-@media (max-width:850px) {
-    .second-section .wrapper {
-        flex-direction: column;
-        padding-inline:0;
-        gap:4rem;
-    }
-    .second-right {
-        padding-inline:4rem;
-    }
-    .second-right,
-    .second-left {
-        width:100%;
-    }
-    .second-left {
-        padding-block:18rem;
-    }
-    
-}
-@media (max-width:700px) {
-    .second-right {
-        padding-inline:2rem;
-    }
-}
-@media (max-width:500px) {
-    .second-right {
-        padding-inline:1rem;
-    }
-    .second-section h2 {
-        font-size:var(--mobile-heading-two)
-        
-        
-
-    }
-    .second-section p {
-        font-size:var(--mobile-text);
-        font-weight:200;
-        font-family:"roboto"
-    }
-    .second-section p:nth-of-type(1) {
-        font-size:var(--mobile-sub-heading);
-        line-height:1.25;
-        font-weight:500;
-    
-    }
-   
-}
-/******************/
-/************ Third Section *********/
-
-.third-section .wrapper {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap:2rem;
-    padding-right:0;
-}
-
-.third-section h2 {
-    font-size:var(--heading-two);
-}
-
-.third-left {
-    display:flex;
-    flex-direction: column;
-    gap:1rem;
-    align-items: flex-start;
-}
-.third-section p:nth-child(1) {
-    font-size:var(--sub-heading);
-    font-family:"roboto";
-    font-weight:500;
-}
-.third-section p {
-    font-size:var(--text);
-    font-weight:200;
-    font-family:"roboto"
-}
-.third-section p:nth-of-type(1) {
-    font-size:var(--sub-heading);
-    font-family:"roboto";
-    font-weight:500;
-}
-
-.third-left button {
-    background-color:var(--blue);
-    color:white;
-    margin-top:1rem;
-}
-/****/
-.third-right {
-    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 5%), linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-three/remi-walle-UOwvwZ9Dy6w-unsplash.jpg);
-    width:50%;
-    background-size:cover;
-    padding-block:22rem;
-}
-.third-left {
-    width:50%;
-}
-@media (max-width:850px) {
-    .third-section .wrapper {
-        flex-direction: column-reverse;
-        padding-inline:0;
-        gap:4rem;
-    }
-    .third-left {
-        padding-inline:4rem;
-    }
-    .third-right {
-        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-three/remi-walle-UOwvwZ9Dy6w-unsplash.jpg);
-        background-size:cover ;
-        background-position: center;
-
-        background-repeat: no-repeat;
-
-    }
-    .third-right,
-    .third-left {
-        width:100%;
-    }
-    
-}
-@media (max-width:700px) {
-    .third-left {
-        padding-inline:2rem;
-    }
-}
-@media (max-width:500px) {
-    .third-left {
-        padding-inline:1rem;
-    }
-    .third-section h2 {
-        font-size:var(--mobile-heading-two) !important;
-        
-        
-
-    }
-    .third-section p:nth-of-type(1) {
-        font-size:var(--mobile-sub-heading) !important;
-        font-family:"roboto";
-        font-weight:500;
-    }
-    .third-section p {
-        font-size:var(--mobile-text);
-        font-weight:200;
-        font-family:"roboto"
-    }
-    
-   
-}
 
 /**********************/
 .services-intro-section .wrapper {
@@ -639,7 +451,7 @@ main .wrapper p:nth-of-type(2) {
 .fifth-right {
     width:50%;
 }
-@media (max-width:850px) {
+@media (max-width:1050px) {
     .fifth-section .wrapper {
         flex-direction: column;
         padding-inline:0;
@@ -695,7 +507,7 @@ footer img {
     
 }
 
-footer img:nth-child(2n) {
+footer a:nth-child(2) img {
     width:30px;
 }
 .footer-left > a img {
@@ -735,8 +547,18 @@ footer .wrapper {
 }
 .footer-right {
     align-self:flex-end;
+    display:flex;
+    flex-direction: column-reverse;
+    gap:4rem;
 }
-@media (max-width:850px) {
+.iwd img {
+    width:235px;
+}
+.iwd p {
+    width:100%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media (max-width:1050px) {
     footer .wrapper {
         flex-direction:column;
         gap:4rem;
@@ -907,4 +729,41 @@ footer .wrapper {
 
 
 
+
+.watermark {
+    position:absolute;
+    font-weight:900 !important;
+    font-size:150px !important;
+    opacity:0.05;
+}
+.fifth-right {
+    position:relative;
+    overflow-x:hidden;
+
+}
+.fifth-right .watermark {
+    top:-15%;
+}
+@media (max-width:1050px) {
+    .fifth-right .watermark {
+        top:-5%;
+    }
+    .fifth-right {
+        padding-top:2rem !important;
+    }
+}
+
+.faq-titles {
+    position:relative;
+    z-index:1;
+    overflow-x:hidden;
+
+}
+.faq-titles .watermark {
+    top:-30%;
+    line-height:1;
+    opacity:1;
+    color:#010154;
+    z-index:-1 !important;
+}
 

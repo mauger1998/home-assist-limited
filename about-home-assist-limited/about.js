@@ -1,76 +1,38 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    spaceBetween:10,
-    autoplay: true,
-    speed:400,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+const URL = "https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'teamMember'%5D%7B%0A%20%20position%2C%0A%20%20name%2C%0A%20%22imageUrl%22%3A%20image.asset-%3Eurl%0A%7D"
 
+  fetch(URL)
+        .then((res) => res.json())
+        .then(({ result }) => {
+          const grid = document.querySelector(".meet-team-grid")
 
-//   let QUERY = encodeURIComponent(`[_type == 'aboutHeroSection']`);
-
-//   let URL = `https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'aboutHeroSection'%5D`;
-
-//   fetch(URL)
-//         .then((res) => res.json())
-//         .then(({ result }) => {
-//           const heroHeading = document.querySelector("h1")
-//           const heroText = document.querySelector(".main-left > p")
-          
-
-//           heroHeading.textContent = result[0].heading
-//           heroText.textContent = result[0].text
+          result.forEach((result, index) => {
+            const gridItem = document.createElement("div")
+            gridItem.classList.add("team-item")
+            grid.appendChild(gridItem)
+            const gridImage = document.createElement("img")
+            gridImage.src = result.imageUrl
+            gridItem.appendChild(gridImage)
+            const memberName = document.createElement("p")
+            memberName.textContent = result.name
+            gridItem.appendChild(memberName)
+            const memberPosition = document.createElement("p")
+            memberPosition.textContent = result.position
+            gridItem.appendChild(memberPosition)
+            
+})
         
-// })
+})
 
-// let QUERYTWO = encodeURIComponent(`*[_type == 'aboutSecondSection']`);
-
-// let URLTWO = `https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'aboutSecondSection'%5D`;
-
-// fetch(URLTWO)
-//       .then((res) => res.json())
-//       .then(({ result }) => {
-//         const secondHeading = document.querySelector(".second-section h2")
-//         const secondText = document.querySelector(".second-section p")
-        
-
-//         secondHeading.textContent = result[0].heading
-//         secondText.textContent = result[0].text
-      
-// })
+const URLTWO = "https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'teamImage'%5D%20%7B%0A%20%20%22imageUrl%22%3A%20image.asset-%3Eurl%0A%7D%0A"
 
 
-// let QUERYFOUR = encodeURIComponent(`*[_type == 'aboutThirdSection']`);
+fetch(URLTWO)
+.then((res) => res.json())
+.then(({ result }) => {
+    const secondRight = document.querySelector(".second-right")
 
-// let URLFOUR = `https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'aboutThirdSection'%5D`;
+    console.log(result[0].imageUrl)
 
-// fetch(URLFOUR)
-//       .then((res) => res.json())
-//       .then(({ result }) => {
-//         const thirdHeading = document.querySelector(".third-right h2")
-//         const thirdSubHeading = document.querySelector(".third-right p:nth-of-type(1)")
-//         const thirdText = document.querySelector(".third-right p:nth-of-type(2)")
-//         const thirdSecondText = document.querySelector(".third-right p:nth-of-type(3)")
+    secondRight.style.backgroundImage = `linear-gradient(to top, #FFFFFF, #FFFFFF00 10%), linear-gradient(to right, #FFFFFF, #FFFFFF00 10%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 10%), url(${result[0].imageUrl})`
+})
 
-//         thirdHeading.textContent = result[0].heading
-//         thirdSubHeading.textContent = result[0].subHeading
-//         thirdText.textContent = result[0].text
-//         thirdSecondText.textContent = result[0].textTwo
-      
-// })
