@@ -757,10 +757,11 @@ footer .wrapper {
     position:relative;
     z-index:1;
     overflow-x:hidden;
+    padding-top:2rem;
 
 }
 .faq-titles .watermark {
-    top:-30%;
+    top:-8%;
     line-height:1;
     opacity:1;
     color:#010154;
