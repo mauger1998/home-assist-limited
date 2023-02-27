@@ -767,4 +767,46 @@ footer .wrapper {
     color:#010154;
     z-index:-1 !important;
 }
+/********* Cleaning Images *******/
+.cleaning-section img {
+    width:100%;
+    height:100%;
+}
+.cleaning-section .wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
+    
+}
+@media (max-width:1050px) {
+    .cleaning-section .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    .cleaning-section .wrapper img:nth-child(3) {
+        place-self:center;
+        grid-column: span 2;
+        width:50%;
+    }
+}
+@media (max-width:750px) {
+    .cleaning-section .wrapper {
+        grid-template-columns: 1fr;
+        gap:2rem;
+    }
+    .cleaning-section .wrapper img:nth-child(3) {
+        place-self:auto;
+        grid-column: span 1;
+        width:100%;
+    }
+}
+@media (max-width:700px) {
+    .cleaning-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .cleaning-section .wrapper {
+        padding-inline:1rem;
+    }
+}
 
