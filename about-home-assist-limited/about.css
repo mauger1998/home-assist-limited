@@ -496,7 +496,6 @@ main .wrapper p:nth-of-type(2) {
 .latest-news-section {
     background-color:var(--blue);
     color:white;
-    overflow-x:hidden !important;
 
    
 }
@@ -685,7 +684,6 @@ footer .wrapper {
 
 .second-left {
     position:relative;
-    overflow-x:hidden;
     padding-top:2rem;
 
 }
@@ -701,7 +699,6 @@ footer .wrapper {
 }
 .third-right {
     position:relative;
-    overflow-x:hidden;
     padding-top:2rem;
 
 }
@@ -711,7 +708,6 @@ footer .wrapper {
 .news-titles {
     position:relative;
     z-index:1;
-    overflow:hidden;
     padding-top:1rem;
 
 }

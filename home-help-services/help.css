@@ -665,7 +665,6 @@ footer .wrapper {
 
 }
 .answer {
-    overflow:hidden;
     max-height:0 ;
     position:relative;
     background-color:var(--blue);
@@ -692,7 +691,6 @@ footer .wrapper {
 }
 
 .active {
-    overflow:hidden !important;
     max-height:20rem !important;
     transition:2.5s !important;
 }
@@ -738,7 +736,6 @@ footer .wrapper {
 }
 .fifth-right {
     position:relative;
-    overflow-x:hidden;
 
 }
 .fifth-right .watermark {
@@ -756,7 +753,6 @@ footer .wrapper {
 .faq-titles {
     position:relative;
     z-index:1;
-    overflow-x:hidden;
     padding-top:2rem;
 
 }
