@@ -42,6 +42,7 @@ fetch(URL)
                         
                         } else {
                             answer[index].classList.add("active")
+                            
                         }
 
                         plus[index].classList.toggle("gone")

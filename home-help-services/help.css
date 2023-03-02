@@ -586,6 +586,7 @@ footer .wrapper {
 .faq-section {
     background-color:var(--blue);
     color:white;
+
 }
 .faq-section .wrapper {
     display:flex;
@@ -619,6 +620,7 @@ footer .wrapper {
     height:max-content;
     color:white;
 
+
 }
 .accordian a {
     color:white;
@@ -630,6 +632,8 @@ footer .wrapper {
     gap:1rem;
     height:max-content;
     cursor:pointer;
+    overflow:hidden;
+
 
 
 
@@ -664,14 +668,7 @@ footer .wrapper {
     
 
 }
-.answer {
-    max-height:0 ;
-    position:relative;
-    background-color:var(--blue);
-    transition:0.5s;
 
-
-}
 .answer::before {
     content:"";
     position: absolute;
@@ -684,7 +681,19 @@ footer .wrapper {
 }
 .answer p{
     padding-inline:2rem;
+   
+    transition:500ms;
+  
 
+
+}
+
+.answer {
+    max-height:0;
+    position:relative;
+    background-color:var(--blue);
+    transition:0.5s;
+    pointer-events:none;
 }
 .accordian {
     width:100%;
@@ -694,6 +703,7 @@ footer .wrapper {
     max-height:20rem !important;
     transition:2.5s !important;
 }
+
 @media (max-width:1128px) {
     .faq-titles p {
         width:75%;
