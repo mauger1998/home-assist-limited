@@ -64,7 +64,7 @@ p {
 header {
     position:fixed;
     background-color:#ffffff50;
-    z-index:10;
+    z-index:1000;
     backdrop-filter: blur(10px);
 }
 .header-wrapper {
@@ -917,9 +917,16 @@ dialog p {
     width:100%;
     display:flex;
     flex-direction: column;
-    gap:2rem;
+    align-items: flex-start;
+    gap:1rem;
     height:100% !important;
     
+}
+.p-wrapper button {
+    padding-inline:4rem;
+}
+dialog strong {
+    font-size:1.25rem;
 }
 
 .main-wrapper {
@@ -935,8 +942,10 @@ dialog {
     left:50%;
     transform:translate(-50%, -50%);
     padding:2rem;
-    /* padding-block:0 !important; */
     z-index:10;
-    /* pointer-eintrovents:none; */
-   
+    max-width:1440px;
+}
+dialog::backdrop {
+    background-color:#00003286;
+    transition:0.5s;
 }

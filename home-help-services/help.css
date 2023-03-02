@@ -63,7 +63,11 @@ p {
 /********** Header **********/
 header {
     position:fixed;
-    background-color:#ffffff50
+    background-color:#ffffff50;
+    backdrop-filter: blur(10px);
+    z-index:1000;
+    /* border:2px solid red; */
+
 }
 .header-wrapper {
     width:100%;
