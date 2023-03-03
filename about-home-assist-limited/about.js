@@ -36,3 +36,22 @@ fetch(URLTWO)
     secondRight.style.backgroundImage = `linear-gradient(to top, #FFFFFF, #FFFFFF00 10%), linear-gradient(to right, #FFFFFF, #FFFFFF00 10%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 10%), url(${result[0].imageUrl})`
 })
 
+// Dropdown
+
+document.addEventListener("click", (e) => {
+  const isDropdownButton = e.target.matches("[data-dropdown-button]")
+
+  if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
+  let currentDropdown
+  if (isDropdownButton) {
+      currentDropdown = e.target.closest("[data-dropdown]")
+      currentDropdown.classList.toggle("active")
+  }
+
+  document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
+      if (dropdown === currentDropdown) return
+      dropdown.classList.remove("active")
+  })
+})
+
+

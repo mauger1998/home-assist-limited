@@ -433,12 +433,13 @@ main .wrapper p:nth-of-type(2) {
     font-weight:200;
     font-family:"roboto"
 }
-.fifth-section p:nth-of-type(1) {
+.fifth-section p:nth-of-type(2) {
     font-size:var(--sub-heading);
     line-height:1.25;
     font-weight:500;
 
 }
+
 .fifth-right button {
     background-color:var(--blue);
     color:white;
@@ -446,11 +447,11 @@ main .wrapper p:nth-of-type(2) {
 }
 /****/
 .fifth-left {
-    background-image:linear-gradient(to left, #FFFFFF, #FFFFFF00 5%), linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-three/hand-hold.png);
+    background-image:linear-gradient(to left, #FFFFFF, #FFFFFF00 5%), linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-website-new/iStock-859361626.png);
     width:50%;
     background-size:cover;
     background-position:center;
-    padding-block:22rem;
+    padding-block:25rem;
 }
 .fifth-right {
     width:50%;
@@ -820,3 +821,83 @@ footer .wrapper {
     }
 }
 
+/***********************/
+.dropdown {
+    position:relative !important;
+    display:none;
+    z-index:10000 !important;
+
+    
+}
+.dropdown-menu {
+    position:absolute;
+    right:0;
+    top:calc(100% + 0.5rem);
+    padding:1.5rem;
+    background-color:white;
+    box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.1);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    width:max-content;
+    opacity:0;
+    transform:translateY(-1rem);
+    transition:opacity 0.5s, transform 0.5s;
+    pointer-events:none;
+    gap:2rem;
+
+   
+}
+.dropdown-heading > a {
+    font-weight:500 !important;
+}
+.dropdown-links {
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+.dropdown-links a {
+    font-weight:500 !important;
+}
+.div {
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+    opacity:1;
+    transform:translateY(0);
+    pointer-events:all;
+    transition:opacity 0.5s, transform 0.5s;
+
+}
+.menu + .dropdown-menu {
+    padding-block:2rem;
+}
+.dropdown-heading > p {
+    font-weight:700 !important;
+}
+.dropdown > a {
+    font-weight:500 !important;
+}
+.menu {
+    width:50px !important;
+    display:none;
+}
+@media (max-width:1050px) {
+    .menu {
+        display:block;
+        cursor:pointer;
+    }
+    nav {
+        display:none;
+    }
+    .dropdown {
+        displaY:block;
+    }
+}
+@media (max-width:324px) {
+    .dropdown-menu {
+        grid-template-columns: 1fr;
+    }
+}
