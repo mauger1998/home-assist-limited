@@ -410,7 +410,7 @@ main .wrapper p:nth-of-type(2) {
     width:100%;
     max-width:60ch;
 }
-.third-section p:nth-of-type(1) {
+.third-section p:nth-of-type(2) {
     font-size:var(--sub-heading);
     line-height:1.25;
     font-weight:500;
@@ -586,14 +586,13 @@ footer img {
     width:40px;
     
 }
-
 footer a:nth-child(2) img {
     width:30px;
 }
 .footer-left > a img {
     width:150px;
 }
-footer .wrapper {
+.footer-top {
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -614,7 +613,7 @@ footer .wrapper {
 .address p:nth-child(1) {
     font-weight:700;
 }
-.contact > p:nth-child(1) {
+.contact > p {
     font-weight:700;
 }
 .footer-right ul{
@@ -638,8 +637,21 @@ footer .wrapper {
     width:100%;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+footer .wrapper {
+    display:flex;
+    flex-direction:column;
+}
+.footer-bottom {
+    width:100%;
+    display:flex;
+    padding-block:6rem;
+    align-items: center;
+    justify-content: flex-end;
+    gap:2rem;
+    font-weight:200;
+}
 @media (max-width:1050px) {
-    footer .wrapper {
+    .footer-top {
         flex-direction:column;
         gap:4rem;
     }
@@ -653,13 +665,18 @@ footer .wrapper {
         align-items: center;
         text-align:center;
     }
+    .footer-bottom {
+        justify-content: center;
+    }
     .address p {
         font-size:var(--mobile-text)
     }
-    .contact p{
+    .contact p {
         font-size:var(--mobile-text)
     }
 }
+
+/********************/
 /******************* Watermarks **********************/
 
 
