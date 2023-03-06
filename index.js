@@ -14,7 +14,10 @@ fetch(URL)
         newsCards[index].appendChild(secondP)
         const enquireButton = document.createElement("button")
         enquireButton.textContent = "Enquire Now"
-        newsCards[index].appendChild(enquireButton)
+        const buttonLink = document.createElement("a")
+        buttonLink.setAttribute("href", "#contact")
+        buttonLink.appendChild(enquireButton)
+        newsCards[index].appendChild(buttonLink)
     })
     
 })

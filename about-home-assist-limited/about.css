@@ -164,13 +164,13 @@ main .wrapper p:nth-of-type(2) {
     }
     main {
      background-size:max(100%, 600px);
-     background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-website-new/iStock-1203192990.png);
+     background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 100%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-website-new/iStock-1203192990.png);
  }
      
  }
  @media (max-width:885px) {
      main {
-         background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-website-new/iStock-1203192990.png);
+         background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 100%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-website-new/iStock-1203192990.png);
  
      }
      main .wrapper {
@@ -270,14 +270,17 @@ main .wrapper p:nth-of-type(2) {
     align-items: center;
     justify-content: center;
     gap:2rem;
-    padding-right:0;
+    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 50%),linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-website-new/iStock-1190833104.png);
+    background-repeat:no-repeat;
+    background-size:100%;
+
 }
 
 .second-section h2 {
     font-size:var(--heading-two);
 }
 
-.second-left {
+.second-section .wrapper {
     display:flex;
     flex-direction: column;
     gap:1rem;
@@ -286,53 +289,41 @@ main .wrapper p:nth-of-type(2) {
 .second-section p {
     font-size:var(--text);
     font-weight:200;
-    font-family:"roboto"
+    font-family:"roboto";
+    width:100%;
+    max-width:60ch;
 }
 
-.second-left button {
+.second-section button {
     background-color:var(--blue);
     color:white;
     margin-top:1rem;
 }
 /****/
-.second-right {
-    width:50%;
-    background-size:cover;
-    padding-block:16rem;
-}
-.second-left {
-    width:50%;
-}
+
 @media (max-width:1050px) {
+   
     .second-section .wrapper {
-        flex-direction: column-reverse;
-        padding-inline:0;
-        gap:4rem;
-    }
-    .second-left {
         padding-inline:4rem;
     }
-    .second-right {
-        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-two/our-team-of-home-card-helpers.png);
+    .second-section .wrapper {
+        background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 50%),linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-website-new/iStock-1190833104.png);
         background-size:cover ;
         background-position: center;
 
         background-repeat: no-repeat;
 
     }
-    .second-right,
-    .second-left {
-        width:100%;
-    }
+   
     
 }
 @media (max-width:700px) {
-    .second-left {
+    .second-section .wrapper {
         padding-inline:2rem;
     }
 }
 @media (max-width:500px) {
-    .second-left {
+    .second-section .wrapper {
         padding-inline:1rem;
     }
     .second-section h2 {
@@ -398,14 +389,15 @@ main .wrapper p:nth-of-type(2) {
     align-items: center;
     justify-content: center;
     gap:2rem;
-    padding-left:0;
+    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 70%), linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-png/halo-png-two/ian-schneider-TamMbr4okv4-unsplash.jpg);
+
 }
 
 .third-section h2 {
     font-size:var(--heading-two);
 }
 
-.third-right {
+.third-section .wrapper {
     display:flex;
     flex-direction: column;
     gap:1rem;
@@ -413,8 +405,10 @@ main .wrapper p:nth-of-type(2) {
 }
 .third-section p {
     font-size:var(--text);
-    font-weight:200;
-    font-family:"roboto"
+    font-weight:300;
+    font-family:"roboto";
+    width:100%;
+    max-width:60ch;
 }
 .third-section p:nth-of-type(1) {
     font-size:var(--sub-heading);
@@ -422,16 +416,14 @@ main .wrapper p:nth-of-type(2) {
     font-weight:500;
 
 }
-.third-right button {
+.third-section button {
     background-color:var(--blue);
     color:white;
     margin-top:1rem;
 }
 /****/
-.third-left {
-    background-image:linear-gradient(to left, #FFFFFF, #FFFFFF00 5%), linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-two/ian-schneider-TamMbr4okv4-unsplash.jpg);
+.third-section .wrapper {
     background-position:center;
-    width:50%;
     background-size:cover;
     padding-block:17rem;
 }
@@ -439,36 +431,32 @@ main .wrapper p:nth-of-type(2) {
     width:50%;
 }
 @media (max-width:1050px) {
+  
     .third-section .wrapper {
-        flex-direction: column;
-        padding-inline:0;
-        gap:4rem;
-    }
-    .third-right {
         padding-inline:4rem;
     }
-    .third-left {
-        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 5%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 5%) , url(../halo-png/halo-png-two/ian-schneider-TamMbr4okv4-unsplash.jpg);
-        background-size:100% ;
+    .third-section .wrapper {
+        background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 100%), linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 80%) , url(../halo-png/halo-png-two/ian-schneider-TamMbr4okv4-unsplash.jpg);
+        background-size:cover ;
         background-position: center;
         background-repeat: no-repeat;
         padding-block:10rem;
        
 
     }
-    .third-right,
-    .third-left {
+    .third-section .wrapper
+    {
         width:100%;
     }
     
 }
 @media (max-width:700px) {
-    .third-right {
+    .third-section .wrapper {
         padding-inline:2rem;
     }
 }
 @media (max-width:500px) {
-    .third-right {
+    .third-section .wrapper {
         padding-inline:1rem;
     }
     .third-section h2 {
@@ -479,7 +467,7 @@ main .wrapper p:nth-of-type(2) {
     }
     .third-section p {
         font-size:var(--mobile-text);
-        font-weight:200;
+        font-weight:300;
         font-family:"roboto"
     }
     .third-section p:nth-of-type(1) {
@@ -687,23 +675,23 @@ footer .wrapper {
     padding-top:2rem;
 
 }
-.second-left .watermark {
+.second-section .watermark {
     top:-18% !important;
     left:0% !important;
     z-index:-1;
 }
 @media (max-width:436px) {
-    .second-left .watermark {
+    .second-section .watermark {
         top:-14% !important;
     }
 }
-.third-right {
+.third-section{
     position:relative;
     padding-top:2rem;
 
 }
-.third-right .watermark {
-    top:-10%;
+.third-section .watermark {
+    top:25%;
 }
 .news-titles {
     position:relative;
