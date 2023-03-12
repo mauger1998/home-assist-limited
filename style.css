@@ -4,8 +4,8 @@
     --sub-heading: 25px;
     --text: 18px;
     --button-text:14px;
-    --heading-one:75px;
-    --mobile-heading-one:50px;
+    --heading-one:65px;
+    --mobile-heading-one:40px;
     --mobile-text:12px;
     --mobile-button-text:14px;
     --mobile-heading-two:35px;
@@ -137,7 +137,7 @@ main .wrapper {
  
 }
 h1 {
-    font-size:5rem;
+    font-size:4rem;
 }
 main .wrapper p:nth-child(1) {
     letter-spacing:1.25rem;
@@ -160,7 +160,7 @@ main .wrapper p:nth-of-type(2) {
 }
 @media (max-width:1000px) {
    main h1 {
-    font-size:65px;
+    font-size:55px;
    }
    main {
     background-size:max(100%, 600px);
@@ -203,7 +203,7 @@ main .wrapper p:nth-of-type(2) {
 }
 @media (max-width:582px) {
     main .wrapper  {
-        padding-top:27rem;
+        padding-top:25.5rem;
         
     }
     .tag {
@@ -758,7 +758,7 @@ footer a:nth-child(2) img {
     gap:4rem;
 }
 .iwd img {
-    width:235px;
+    width:100px;
 }
 .iwd p {
     width:100%;

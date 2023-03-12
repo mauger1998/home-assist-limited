@@ -206,7 +206,7 @@ main .wrapper p:nth-of-type(2) {
  }
  @media (max-width:582px) {
      main .wrapper  {
-         padding-top:27rem;
+         padding-top:26rem;
          
      }
      .tag {
@@ -286,9 +286,16 @@ main .wrapper p:nth-of-type(2) {
     gap:1rem;
     align-items: flex-start;
 }
-.second-section p {
+.second-section p:nth-child(1n) {
+    font-size:var(--sub-heading);
+    font-weight:700;
+    font-family:"roboto";
+    width:100%;
+    max-width:60ch;
+}
+.second-section p:nth-child(2n) {
     font-size:var(--text);
-    font-weight:200;
+    font-weight:300;
     font-family:"roboto";
     width:100%;
     max-width:60ch;
@@ -389,7 +396,7 @@ main .wrapper p:nth-of-type(2) {
     align-items: center;
     justify-content: center;
     gap:2rem;
-    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 70%), linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-png/halo-png-two/ian-schneider-TamMbr4okv4-unsplash.jpg);
+    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 70%), linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-png/halo-png-two/mayur-gala-2PODhmrvLik-unsplash.jpg);
 
 }
 
@@ -631,7 +638,7 @@ footer a:nth-child(2) img {
     gap:4rem;
 }
 .iwd img {
-    width:235px;
+    width:100px;
 }
 .iwd p {
     width:100%;
