@@ -158,6 +158,14 @@ main .wrapper p:nth-of-type(2) {
     background-color:transparent;
     color:var(--blue);
 }
+
+
+
+
+
+
+
+
 @media (max-width:1000px) {
    main h1 {
     font-size:55px;
@@ -300,20 +308,67 @@ main .wrapper p:nth-of-type(2) {
     
     
 }
+/* ********* Dialog ***
+
+dialog p {
+    font-size:12px !important;
+    width:100% !important;
+
+    
+}
+.p-wrapper {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1rem;
+    height:100% !important;
+    
+}
+.p-wrapper button {
+    padding-inline:4rem;
+}
+dialog strong {
+    font-size:1.25rem;
+}
+
+.main-wrapper {
+ display:flex;
+ align-items: flex-start;
+ justify-content: center;
+ gap:2rem;
+}
+dialog {
+    width:90% !important;
+    align-self:center !important;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    padding:2rem;
+    z-index:10;
+    max-width:1440px;
+    border:none;
+    overflow-y:scroll'
+}
+dialog::backdrop {
+    background-color:#00000090;
+    transition:0.5s;
+} */
 @media (max-width:1187px) {
-    .introduction-section p {
+    .introduction-section .wrapper > p {
         width:70% !important;
        
     }
 }
+
 @media (max-width:899px) {
-    .introduction-section p {
+    .introduction-section .wrapper > p {
         width:80% !important;
        
     }
 }
 @media (max-width:782px) {
-    .introduction-section p {
+    .introduction-section .wrapper > p {
         width:90% !important;
        
     }
@@ -324,7 +379,7 @@ main .wrapper p:nth-of-type(2) {
     }
 }
 @media (max-width:647px) {
-    .introduction-section p {
+    .introduction-section .wrapper > p {
         width:100% !important;
        
     }
@@ -336,7 +391,7 @@ main .wrapper p:nth-of-type(2) {
     .introduction-section h2 {
         font-size:var(--mobile-heading-two);
     }
-    .introduction-section p {
+    .introduction-section .wrapper > p {
         font-size:var(--mobile-text)
        
     }
@@ -903,51 +958,7 @@ footer .wrapper {
         left:1rem;
     }
 }
-/********** Dialog ****/
 
-dialog p {
-    font-size:12px !important;
-    width:100% !important;
-
-    
-}
-.p-wrapper {
-    width:100%;
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:1rem;
-    height:100% !important;
-    
-}
-.p-wrapper button {
-    padding-inline:4rem;
-}
-dialog strong {
-    font-size:1.25rem;
-}
-
-.main-wrapper {
- display:flex;
- align-items: flex-start;
- justify-content: center;
- gap:2rem;
-}
-dialog {
-    width:90% !important;
-    align-self:center !important;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    padding:2rem;
-    z-index:10;
-    max-width:1440px;
-    border:none;
-}
-dialog::backdrop {
-    background-color:#00000090;
-    transition:0.5s;
-}
 
 /******* Dropdown *****/
 /***********************/
