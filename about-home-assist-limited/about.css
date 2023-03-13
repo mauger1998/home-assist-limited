@@ -123,7 +123,7 @@ nav {
 /**************** Hero ********/
 /*************** Hero **************/
 main {
-    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%),url(../halo-website-new/iStock-1203192990.png);
+    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%),url(../halo-website-new/iStock-1203192990.png);
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -164,13 +164,13 @@ main .wrapper p:nth-of-type(2) {
     }
     main {
      background-size:max(100%, 600px);
-     background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 100%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-website-new/iStock-1203192990.png);
+     background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%), url(../halo-website-new/iStock-1203192990.png);
  }
      
  }
  @media (max-width:885px) {
      main {
-         background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 100%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-website-new/iStock-1203192990.png);
+         background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-website-new/iStock-1203192990.png);
  
      }
      main .wrapper {
@@ -264,15 +264,18 @@ main .wrapper p:nth-of-type(2) {
  }
 
 /************ Second Section *********/
+.second-section {
+    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 50%),linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-website-new/iStock-1190833104.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
 
 .second-section .wrapper {
     display:flex;
     align-items: center;
     justify-content: center;
     gap:2rem;
-    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 50%),linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-website-new/iStock-1190833104.png);
-    background-repeat:no-repeat;
-    background-size:100%;
+  
 
 }
 
@@ -305,6 +308,35 @@ main .wrapper p:nth-of-type(2) {
     background-color:var(--blue);
     color:white;
     margin-top:1rem;
+}
+.list-main {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
+    align-items: center;
+    gap:2rem;
+    margin-top:6rem;
+    width:100%;
+}
+.list-main .list-one {
+    background-color:#ffffffc3;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    padding:2rem;
+    width:100%;
+    height:100%;
+    border-radius:48px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:0rem;
+}
+.button {
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: flex-end;
 }
 /****/
 
