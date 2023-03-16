@@ -12,29 +12,22 @@ fetch(URL)
         const secondP = document.createElement("p")
         secondP.textContent = result.cardText
         newsCards[index].appendChild(secondP)
+        const buttonWrapper = document.createElement("div")
         const enquireButton = document.createElement("button")
         enquireButton.textContent = "Enquire Now"
         const buttonLink = document.createElement("a")
         buttonLink.setAttribute("href", "#contact")
         buttonLink.appendChild(enquireButton)
-        newsCards[index].appendChild(buttonLink)
+        buttonWrapper.appendChild(buttonLink)
+        newsCards[index].appendChild(buttonWrapper)
+        buttonWrapper.classList.add("bw")
     })
     
 })
 
 // Modal
 
-const modal = document.querySelector("dialog")
-const openModal = document.querySelector(".open-modal")
-const closeModal = document.querySelector(".close-modal")
 
-openModal.addEventListener("click", () => {
-    modal.showModal()
-})
-
-closeModal.addEventListener("click", () => {
-    modal.close()
-})
 
 
 // Dropdown
