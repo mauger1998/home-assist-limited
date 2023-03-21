@@ -268,7 +268,7 @@ main .wrapper p:nth-of-type(2) {
 
 /************ Second Section *********/
 .second-section {
-    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 50%),linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-website-new/iStock-1190833104.png);
+    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 50%),linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-png/pexels.png);
     background-repeat:no-repeat;
     background-size:cover;
 }
@@ -349,7 +349,7 @@ main .wrapper p:nth-of-type(2) {
         padding-inline:4rem;
     }
     .second-section .wrapper {
-        background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 50%),linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-website-new/iStock-1190833104.png);
+        background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 50%),linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%) , url(../halo-png/pexels.png);
         background-size:cover ;
         background-position: center;
 
