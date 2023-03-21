@@ -557,13 +557,9 @@ main .wrapper p:nth-of-type(2) {
 
 @media (max-width:1000px) {
     .meet-team-grid {
-        grid-template-columns:1fr 1fr;
+        grid-template-columns:1fr;
     }
-    .team-item:nth-child(3) {
-        width:100%;
-        grid-column:span 2;
-        place-self:center;
-    }
+    
 }
 @media (max-width:750px) {
     .meet-team-grid {
