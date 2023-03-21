@@ -828,7 +828,7 @@ footer .wrapper {
 .footer-bottom {
     width:100%;
     display:flex;
-    padding-block:6rem;
+    padding-top:4rem;
     align-items: center;
     justify-content: flex-end;
     gap:2rem;

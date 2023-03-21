@@ -124,7 +124,7 @@ nav {
 /**************** Hero ********/
 /*************** Hero **************/
 main {
-    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%),url(../halo-png/halo-png-two/happy-cpuple-on-beach.jpg);
+    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%),url(../halo-png/elderly.png);
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -541,8 +541,8 @@ footer .wrapper {
 .footer-bottom {
     width:100%;
     display:flex;
-    padding-block:6rem;
     align-items: center;
+    padding-top:4rem;
     justify-content: flex-end;
     gap:2rem;
     font-weight:200;
