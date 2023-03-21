@@ -260,47 +260,7 @@ main .wrapper p:nth-of-type(2) {
 
 
 
-/**********************/
-.services-intro-section .wrapper {
-    display:flex;
-    justify-content: space-between;
-}
-.services-intro-section h2 {
-    font-size:var(--sub-heading)
-}
-.services-intro-section p {
-    width:50%;
-    font-weight:300;
-}
-@media (max-width:860px) {
-    main .wrapper {
-        padding-bottom:8rem;
-    }
-    .services-intro-section .wrapper {
-        flex-direction: column;
-        gap:1rem;
-        padding-block:0;
-    }
-    .services-intro-section p {
-        width:100%;
-    }
-}
-@media (max-width:700px) {
-    .services-intro-section .wrapper {
-        padding-inline:2rem;
-    }
-}
-@media (max-width:500px) {
-    .services-intro-section .wrapper {
-        padding-inline:1rem;
-    }
-    .services-intro-section h2 {
-        font-size:var(--mobile-sub-heading);
-    }
-    .services-intro-section p {
-        font-size:var(--mobile-text);
-    }
-}
+
 /******* Services Cards *****/
 .first-section {
     background-image: linear-gradient(to top, #FFFFFF, #FFFFFF00 40%),  linear-gradient(to bottom, #FFFFFF, #FFFFFF00 40%), url(../halo-png/home-helper-makes-tea.png);
@@ -454,6 +414,7 @@ main .wrapper p:nth-of-type(2) {
     color:white;
     margin-top:1rem;
 }
+
 .left-work {
     display:flex;
     flex-direction: column;
