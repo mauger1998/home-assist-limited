@@ -309,7 +309,7 @@ main .wrapper p:nth-of-type(2) {
     font-size:var(--text);
    
 }
-.introduction-section .wrapper > p:nth-of-type(2) {
+.introduction-section .wrapper > p:nth-of-type(1) {
     font-weight:500;
     width:50%;
     font-size:var(--sub-heading);   
@@ -397,6 +397,7 @@ main .wrapper p:nth-of-type(2) {
 
 .second-section h2 {
     font-size:var(--heading-two);
+    
    
 }
 
@@ -413,7 +414,7 @@ main .wrapper p:nth-of-type(2) {
     font-family:"roboto";
     max-width:60ch;
 }
-.second-section .wrapper p:nth-of-type(2) {
+.second-section .wrapper p:nth-of-type(1) {
     font-size:var(--sub-heading);
     line-height:1.25;
     font-weight:500 ;
@@ -458,12 +459,7 @@ main .wrapper p:nth-of-type(2) {
         font-weight:300;
         font-family:"roboto";
     }
-    .second-section p:nth-of-type(1) {
-        font-size:var(--mobile-sub-heading);
-        line-height:1.25;
-        font-weight:500;
-    
-    }
+   
    
 }
 /******************/
