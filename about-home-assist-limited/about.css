@@ -65,7 +65,7 @@ header {
     background-color:#ffffff80;
     z-index:1000;
     backdrop-filter: blur(10px);
-    --webkit-backdrop-filter: blur(10px)
+    -webkit-backdrop-filter: blur(10px)
 
 }
 .header-wrapper {
@@ -338,7 +338,7 @@ main .wrapper p:nth-of-type(2) {
 .list-main .list-one {
     background-color:#ffffffc3;
     backdrop-filter: blur(10px);
-    --webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding:2rem;
     width:100%;

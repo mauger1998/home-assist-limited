@@ -65,7 +65,7 @@ header {
     background-color:#ffffff80;
     z-index:1000;
     backdrop-filter: blur(10px);
-    --webkit-backdrop-filter: blur(10px)
+    -webkit-backdrop-filter: blur(10px)
 }
 .header-wrapper {
     width:100%;
