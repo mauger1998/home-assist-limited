@@ -124,7 +124,7 @@ nav {
 /**************** Hero ********/
 /*************** Hero **************/
 main {
-    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%),url(../halo-png/elderly.png);
+    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%),url(../halo-png/halo-consult.png);
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -165,18 +165,21 @@ main .wrapper p:nth-of-type(2) {
     }
     main {
      background-size:max(100%, 600px);
-     background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%), url(../halo-png/elderly.png);
+     background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%), url(../halo-png/halo-consult.png);
  }
      
  }
  @media (max-width:885px) {
      main {
-         background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-png/elderly.png);
+         background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-png/halo-consult.png);
         background-repeat:no-repeat;
+        background-position-y:4rem !important;
      }
      main .wrapper {
          padding-top:70%;
          padding-bottom:2rem;
+         
+
      }
      main .wrapper p,
      main .wrapper h1 {
@@ -205,8 +208,7 @@ main .wrapper p:nth-of-type(2) {
  }
  @media (max-width:582px) {
      main .wrapper  {
-         padding-top:26rem;
-         
+         padding-top:27.5rem;
      }
      .tag {
         letter-spacing:0.4rem !important;
