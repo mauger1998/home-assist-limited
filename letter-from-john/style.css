@@ -271,7 +271,7 @@ main .wrapper p:nth-of-type(2) {
 @media (max-width:885px) {
     main {
         background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-png/johns-letter-hero.png);
-
+        margin-top:4rem;
     }
     main .wrapper {
         padding-top:60%;
@@ -396,7 +396,7 @@ main .wrapper p:nth-of-type(2) {
 }
 .introduction-section .wrapper > p {
     font-weight:400;
-    width:50%;
+    width:100%;
     font-size:var(--text);
    
 }
@@ -415,58 +415,55 @@ main .wrapper p:nth-of-type(2) {
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    gap:2rem;    
+}
+.article {
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:4rem;
+}
+.left-article,
+.right-article {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap:2rem;
-    
-    
 }
-
-
-
-@media (max-width:1187px) {
-    .introduction-section .wrapper > p {
-        width:70% !important;
-       
+@media (max-width:1000px) {
+    .article {
+        flex-direction: column;
+        align-items: flex-start;
+        gap:2rem;
     }
 }
-
-@media (max-width:899px) {
-    .introduction-section .wrapper > p {
-        width:80% !important;
-       
-    }
-}
-@media (max-width:782px) {
-    .introduction-section .wrapper > p {
-        width:90% !important;
-       
-    }
-}
-@media(max-width:700px) {
+@media (max-width:700px) {
     .introduction-section .wrapper {
         padding-inline:2rem;
     }
-}
-@media (max-width:647px) {
-    .introduction-section .wrapper > p {
-        width:100% !important;
-       
+    .introduction-section .wrapper {
+        padding-bottom:0;
+    }
+    .second-section .wrapper {
+        padding-top:6rem !important;
     }
 }
+
 @media (max-width:500px) {
-    .introduction-section .wrapper > p:nth-of-type(1) {
-        font-size:var(--mobile-sub-heading) !important;   
-    }
-    .introduction-section h2 {
-        font-size:var(--mobile-heading-two);
-    }
-    .introduction-section .wrapper > p {
-        font-size:var(--mobile-text)
-       
-    }
     .introduction-section .wrapper {
         padding-inline:1rem;
     }
+    .introduction-section p {
+        font-size:var(--mobile-text);
+    }
+    .article h2 {
+        font-size:var(--mobile-heading-two);
+    }
+   
 }
+
+
+
 /************ Second Section *********/
 
 .second-section .wrapper {
@@ -511,13 +508,14 @@ main .wrapper p:nth-of-type(2) {
     padding-block:12rem;
     padding-bottom:12rem;
 }
-.second-right {
-    width:50%;
-}
+
 
 @media (max-width:700px) {
     .second-section .wrapper {
         padding-inline:2rem;
+    }
+    .second-section .wrapper {
+        padding-bottom:0 !important;
     }
     
 }
@@ -537,6 +535,7 @@ main .wrapper p:nth-of-type(2) {
     }
    
    
+   
 }
 /******************/
 .final-section {
@@ -551,12 +550,11 @@ main .wrapper p:nth-of-type(2) {
    
 }
 .final-section .wrapper p {
-    
+        max-width:60ch;
         font-size:var(--text);
         font-weight:400;
         width:100%;
         font-family:"roboto";
-        max-width:60ch;
 
 }
 @media (max-width:700px) {
