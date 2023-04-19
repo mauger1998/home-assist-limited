@@ -539,13 +539,16 @@ main .wrapper p:nth-of-type(2) {
    
 }
 /******************/
+.final-section {
+    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 70%), linear-gradient(to top, #FFFFFF, #FFFFFF00 70%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 70%) , url(../halo-website-new/john-letter-two.png);
+    background-size:cover;
+}
 .final-section .wrapper {
     display:flex;
     flex-direction: column;
     align-items: flex-start;
     gap:2rem;
-    background-image:linear-gradient(to right, #FFFFFF, #FFFFFF00 70%), linear-gradient(to top, #FFFFFF, #FFFFFF00 70%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 70%) , url(../halo-website-new/john-letter-two.png);
-    background-size:cover;
+   
 }
 .final-section .wrapper p {
     
