@@ -625,6 +625,10 @@ footer img {
     width:40px;
     
 }
+footer .wrapper {
+    padding-bottom:2rem;
+}
+
 footer a:nth-child(2) img {
     width:30px;
 }
@@ -685,9 +689,15 @@ footer .wrapper {
     display:flex;
     align-items: center;
     padding-top:4rem;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap:2rem;
     font-weight:200;
+}
+.policys {
+    display:flex;
+    align-items: flex-end;
+    gap:2rem;
+    align-self:flex-end;
 }
 @media (max-width:1050px) {
     .footer-top {

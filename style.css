@@ -124,7 +124,7 @@ nav {
 }
 /*************** Hero **************/
 main {
-    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%),url(halo-png/newone.png);
+    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%),url(halo-png/new-halo-hero.png);
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -182,13 +182,13 @@ main .wrapper p:nth-of-type(2) {
    }
    main {
     background-size:max(100%, 600px);
-    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%), url(halo-png/newone.png);
+    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%), url(halo-png/new-halo-hero.png);
 }
     
 }
 @media (max-width:885px) {
     main {
-        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(halo-png/newone.png);
+        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(halo-png/new-halo-hero.png);
 
     }
     main .wrapper {
@@ -795,6 +795,9 @@ footer img {
     width:40px;
     
 }
+footer .wrapper {
+    padding-bottom:2rem;
+}
 footer a:nth-child(2) img {
     width:30px;
 }
@@ -853,11 +856,17 @@ footer .wrapper {
 .footer-bottom {
     width:100%;
     display:flex;
-    padding-top:4rem;
     align-items: center;
-    justify-content: flex-end;
+    padding-top:4rem;
+    justify-content: space-between;
     gap:2rem;
     font-weight:200;
+}
+.policys {
+    display:flex;
+    align-items: flex-end;
+    gap:2rem;
+    align-self:flex-end;
 }
 @media (max-width:1050px) {
     .footer-top {
