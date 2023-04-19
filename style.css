@@ -893,6 +893,12 @@ footer .wrapper {
     .contact p {
         font-size:var(--mobile-text)
     }
+    .policys {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+    }
 }
 
 /********************/
