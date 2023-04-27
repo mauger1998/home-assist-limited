@@ -412,7 +412,7 @@ main .wrapper p:nth-of-type(2) {
 }
 .column-grid {
     display:grid;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(275px, 1fr) );
     gap:2rem;
 }
 .column-grid img {
@@ -431,7 +431,7 @@ main .wrapper p:nth-of-type(2) {
 @media (max-width:1025px) {
     .first-section .wrapper {
         display:flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: flex-start;
         gap:4rem;
     }
@@ -443,7 +443,7 @@ main .wrapper p:nth-of-type(2) {
     }
     .first-section:nth-of-type(2) .wrapper {
         display:flex !important;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: flex-start;
     }
 
@@ -472,6 +472,13 @@ main .wrapper p:nth-of-type(2) {
     }
     .first-section:nth-of-type(2) .column-grid p {
         font-size:20px !important;
+    }
+}
+@media (max-width:350px) {
+    .column-grid {
+        display:grid;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+        gap:2rem;
     }
 }
 /******* Second ***/
@@ -610,12 +617,41 @@ span img {
     .second-section .wrapper {
         grid-template-columns: 1fr;
     }
+    
 }
 @Media (max-width:700px) {
     .second-section .wrapper {
         padding-inline:2rem;
     }
     
+}
+
+@media (max-width:633px) {
+    .column-grid-item {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap:0.5rem !important;
+    }
+    .column-grid-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap:0.5rem;
+    }
+    .column-grid-item button {
+        width:10rem;
+        padding-left:0 !important;
+        display:flex;
+        gap:1rem !important;
+        justify-content: flex-start;
+       
+    }
+    span {
+    }
+    button img {
+    }
+    .column-grid-item p {
+        font-size:20px !important;
+    }
 }
 @Media (max-width:500px) {
     .second-section .wrapper {
@@ -633,6 +669,7 @@ span img {
         font-size:var(--mobile-heading-two);
     }
 }
+
 /*** Blue **/
 
 .blue-section {
@@ -770,6 +807,9 @@ span img {
     .third .wrapper {
         padding-inline:2rem;
     }
+    .blue .wrapper {
+        gap:4rem;
+    }
 }
 @media (max-width:500px) {
     .blue-section .wrapper,
@@ -786,6 +826,10 @@ span img {
     p {
         max-width:100% !important;
         width:100% !important;
+    }
+    
+    .blue .swoffers-list {
+        grid-template-columns: 1fr;
     }
 }
 /*** CTA **/
@@ -949,4 +993,13 @@ button {
 .blue-section button {
     background-color:white;
     color:var(--blue);
+}
+@media (max-width:700px) {
+    .wrapper {
+        padding-block:4rem;
+        gap:2rem !important;
+    }
+    main .wrapper {
+        padding-bottom:2rem;
+    }
 }
