@@ -399,7 +399,7 @@ main .wrapper p:nth-of-type(2) {
 .first-section .wrapper {
     display:grid;
     grid-template-columns: 1fr 2fr;
-    gap:2rem;
+    gap:6rem !important;
     align-items:center;
 }
 
