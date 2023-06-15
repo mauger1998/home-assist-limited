@@ -297,27 +297,22 @@ main .wrapper p:nth-of-type(2) {
 }
 /*********** 1.5 *******************/
 .introduction-section  {
-    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 80%),url(halo-website-new/iStock-1173492798.png);
+    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 40%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 40%), linear-gradient(to right, #FFFFFF, #FFFFFF00 100%), url(    halo-website-new/iStock-1173492798.png
+    );
+
     background-size:cover;
     background-repeat: no-repeat;
-    background-position:center;
-   
+    background-position:center; 
+}
+.also-section {
+    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 40%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 40%), linear-gradient(to right, #FFFFFF, #FFFFFF00 100%), url(halo-autumn-png/Group5.png);
 }
 .introduction-section .wrapper > p {
     font-weight:300;
     width:50%;
     font-size:var(--text);
-   
 }
-.introduction-section .wrapper > p:nth-of-type(1) {
-    font-weight:500;
-    width:50%;
-    font-size:var(--sub-heading);   
-}
-.introduction-section .wrapper > p:nth-of-type(1) {
-    font-weight:900 !important;
- 
-}
+
 
 .introduction-section h2 {
     font-size:var(--heading-two);
@@ -365,8 +360,18 @@ main .wrapper p:nth-of-type(2) {
 }
 @media (max-width:647px) {
     .introduction-section .wrapper > p {
-        width:100% !important;
-       
+        width:100% !important;  
+    }
+    .introduction-section  {
+        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 40%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 40%), linear-gradient(to right, #FFFFFF, #FFFFFF00 100%), url(    halo-website-new/iStock-1173492798.png);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center; 
+    }
+    .also-section {
+        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 40%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 40%), linear-gradient(to right, #FFFFFF, #FFFFFF00 100%), url(halo-autumn-png/Group5.png);
+        background-position:right; 
+
     }
 }
 @media (max-width:500px) {
@@ -383,6 +388,7 @@ main .wrapper p:nth-of-type(2) {
     .introduction-section .wrapper {
         padding-inline:1rem;
     }
+    
 }
 
 /************ Second Section *********/

@@ -575,8 +575,10 @@ main .wrapper p:nth-of-type(2) {
 }
 .team-item p:nth-of-type(2) {
     font-size:var(--text);
-    font-weight:400;
+    font-weight:300;
     margin-top:-1rem;
+    text-align:left;
+    line-height:1.5;
 }
 
 @media (max-width:1000px) {
