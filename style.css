@@ -351,6 +351,7 @@ main .wrapper p:nth-of-type(2) {
 .rock-right img {
     width:100%;
 }
+
 /* Next */
 .next-section {
     background-image:linear-gradient(to bottom, #FFFFFF, #FFFFFF00 80%),linear-gradient(to top, #FFFFFF, #FFFFFF00 80%),  url(autumn-new/isaac-sloman-EbZu4RCapi4-unsplash1.png);
@@ -381,10 +382,10 @@ main .wrapper p:nth-of-type(2) {
     padding-block:2rem;
 }
 .blue-banner-section .wrapper img {
-    width:200px;
+    width:80%;
 }
 .blue-banner-section .wrapper img:nth-child(4) {
-    width:250px;
+    /* width:250px; */
 }
 
 
@@ -411,13 +412,16 @@ main .wrapper p:nth-of-type(2) {
     .introduction-section .wrapper {
         padding-inline:2rem;
     }
+    .blue-banner-section .wrapper {
+        padding-inline:2rem;
+    }
 }
 @media (max-width:647px) {
     .introduction-section .wrapper > p {
         width:100% !important;  
     }
     .introduction-section  {
-        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 40%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 40%), linear-gradient(to right, #FFFFFF, #FFFFFF00 100%), url(    halo-website-new/iStock-1173492798.png);
+        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 40%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 40%), linear-gradient(to right, #FFFFFF, #FFFFFF00 100%), url(halo-website-new/iStock-1173492798.png);
         background-size:cover;
         background-repeat: no-repeat;
         background-position:center; 
@@ -425,7 +429,9 @@ main .wrapper p:nth-of-type(2) {
     .also-section {
         background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 40%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 40%), linear-gradient(to right, #FFFFFF, #FFFFFF00 100%), url(halo-autumn-png/Group5.png);
         background-position:right; 
-
+    }
+    .blue-banner-section .wrapper img {
+        width:100%;
     }
 }
 @media (max-width:500px) {
@@ -442,7 +448,38 @@ main .wrapper p:nth-of-type(2) {
     .introduction-section .wrapper {
         padding-inline:1rem;
     }
+    .blue-banner-section .wrapper {
+        padding-inline:1rem;
+    }
     
+}
+@media (max-width:1050px) {
+    .also-section .wrapper {
+        flex-direction: column-reverse;
+    }
+    .also-section {
+        background-image:linear-gradient(to bottom, #FFFFFF, #FFFFFF00 100%), linear-gradient(to right, #FFFFFF, #FFFFFF00 100%),  url(autumn-new/isaac-sloman-Sk5FRDD71_U-unsplash1.png);
+    }
+    .rock-right,
+    .rock-left {
+        width:100% !important;
+    }
+}
+@media (max-width:700px) {
+    .also-section .wrapper {
+        padding-inline:2rem;
+    }
+}
+@media (max-width:500px) {
+    .also-section .wrapper {
+        padding-inline:1rem;
+    }
+    .also-section h2 {
+        font-size:var(--mobile-heading-two);
+    }
+    .also-section p {
+        font-size:var(--mobile-text);
+    }
 }
 
 /************ Second Section *********/
