@@ -48,6 +48,9 @@ fetch(URL)
         paragraph.textContent = result[0].paragraph
         updateableSection.appendChild(paragraph)
 
+        const rockRight = document.querySelector(".rock-right img")
+        rockRight.src = result[0].imgUrl
+
         const button = document.createElement("button")
         button.textContent = "See All Services"
         updateableSection.appendChild(button)
