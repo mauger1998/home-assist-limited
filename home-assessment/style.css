@@ -22,7 +22,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 button {
     padding:0.5rem 1rem;
@@ -55,7 +55,7 @@ footer {
 }
 
 p {
-    line-height:1.75;
+    line-height:1.5;
 }
 
 
@@ -124,7 +124,7 @@ nav {
 }
 /*************** Hero **************/
 main {
-    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%),url(../halo-addition/crop-lawn1.png);
+    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%),url(../halo-website-new/homehero.png);
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -174,14 +174,14 @@ main .wrapper p:nth-of-type(2) {
    }
    main {
     background-size:max(100%, 600px);
-    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%), url(../halo-addition/crop-lawn1.png);
+    background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 80%), linear-gradient(to right, #FFFFFF, #FFFFFF00 80%), url(../halo-website-new/homehero.png);
     background-position:top;
 }
     
 }
 @media (max-width:885px) {
     main {
-        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-addition/crop-lawn1.png);
+        background-image:linear-gradient(to top, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%), url(../halo-website-new/homehero.png);
 
     }
     main .wrapper {
@@ -373,7 +373,7 @@ main .wrapper p:nth-of-type(2) {
         displaY:block;
     }
 }
-@media (max-width:324px) {
+@media (max-width:460px) {
     .dropdown-menu {
         grid-template-columns: 1fr;
     }
@@ -390,7 +390,7 @@ main .wrapper p:nth-of-type(2) {
 }
 .first-section p {
     font-weight:300;
-    line-height:1.75;
+    line-height:1.5;
     font-size:var(--text);
     max-width:33.3%;
     max-width:40ch;
@@ -685,7 +685,7 @@ span img {
 .blue-section p {
     font-weight:300;
     font-size:var(--text);
-    line-height:1.75;
+    line-height:1.5;
     text-align:justify;
     max-width:40ch;
 }
@@ -1002,4 +1002,8 @@ button {
     main .wrapper {
         padding-bottom:2rem;
     }
+}
+h1,
+h2 {
+    line-height:1 !important;
 }

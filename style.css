@@ -22,7 +22,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 button {
     padding:0.5rem 1rem;
@@ -55,7 +55,7 @@ footer {
 }
 
 p {
-    line-height:1.75;
+    line-height:1.5;
 }
 
 
@@ -361,7 +361,7 @@ main .wrapper p:nth-of-type(2) {
 }
 .rock-left p {
     font-weight:300;
-    max-width:55ch;
+    max-width:60ch;
     font-size:var(--text);
 }
 .rock-right img {
@@ -405,9 +405,14 @@ main .wrapper p:nth-of-type(2) {
 }
 
 .next-section .wrapper p:nth-of-type(1) {
-    line-height:1.75 !important;
+    line-height:1.5 !important;
     font-size:var(--text);
     font-weight:300;
+}
+
+#director {
+    font-weight:500 !important;
+    font-size:var(--sub-heading) !important;
 }
 
 
@@ -474,7 +479,7 @@ main .wrapper p:nth-of-type(2) {
         padding-inline:1rem;
     }
     .next-section .wrapper p:nth-of-type(1) {
-        line-height:1.75 !important;
+        line-height:1.5 !important;
         font-size:var(--mobile-text);
         font-weight:300;
     }
@@ -485,7 +490,7 @@ main .wrapper p:nth-of-type(2) {
         flex-direction: column-reverse;
     }
     .also-section {
-        background-image:linear-gradient(to bottom, #FFFFFF, #FFFFFF00 100%), linear-gradient(to right, #FFFFFF, #FFFFFF00 100%),  url(autumn-new/isaac-sloman-Sk5FRDD71_U-unsplash1.png);
+        background-image:linear-gradient(to bottom, #FFFFFF, #FFFFFF00 50%), linear-gradient(to right, #FFFFFF, #FFFFFF00 50%),linear-gradient(to top, #FFFFFF, #FFFFFF00 50%),  url(autumn-new/isaac-sloman-Sk5FRDD71_U-unsplash1.png);
     }
     .rock-right,
     .rock-left {
@@ -1027,7 +1032,7 @@ footer .wrapper {
    text-align:center;
    width:60%;
    color:var(--blue);
-   line-height:1.75;
+   line-height:1.2;
    font-size:var(--mobile-heading-two);
 }
 @media (max-width:1134px) {
@@ -1191,8 +1196,13 @@ footer .wrapper {
         displaY:block;
     }
 }
-@media (max-width:324px) {
+@media (max-width:460px) {
     .dropdown-menu {
         grid-template-columns: 1fr;
     }
+}
+
+h1,
+h2 {
+    line-height:1 !important;
 }

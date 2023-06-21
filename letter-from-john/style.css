@@ -22,7 +22,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:"Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 button {
     padding:0.5rem 1rem;
@@ -55,7 +55,7 @@ footer {
 }
 
 p {
-    line-height:1.75;
+    line-height:1.5;
 }
 
 
@@ -198,7 +198,7 @@ nav {
         displaY:block;
     }
 }
-@media (max-width:324px) {
+@media (max-width:460px) {
     .dropdown-menu {
         grid-template-columns: 1fr;
     }
@@ -679,4 +679,8 @@ footer .wrapper {
         justify-content: center;
         width:100%;
     }
+}
+h1,
+h2 {
+    line-height:1 !important;
 }

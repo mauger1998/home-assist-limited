@@ -23,7 +23,7 @@
     padding:0;
     box-sizing:border-box;
     scroll-behavior: smooth;
-    font-family:"Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 button {
     padding:0.5rem 1rem;
@@ -56,7 +56,7 @@ footer {
 }
 
 p {
-    line-height:1.75;
+    line-height:1.5;
 }
 
 /********** Header **********/
@@ -858,8 +858,12 @@ footer .wrapper {
         displaY:block;
     }
 }
-@media (max-width:324px) {
+@media (max-width:460px) {
     .dropdown-menu {
         grid-template-columns: 1fr;
     }
+}
+h1,
+h2 {
+    line-height:1 !important;
 }
