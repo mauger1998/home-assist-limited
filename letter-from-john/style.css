@@ -22,7 +22,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
 }
 button {
     padding:0.5rem 1rem;
@@ -227,7 +227,7 @@ main .wrapper p:nth-child(1) {
 }
 main .wrapper p:nth-of-type(2) {
     max-width:65ch;
-    font-weight:300;
+    font-weight:400;
 }
 .main-button-container {
     margin-top:1rem;
@@ -613,8 +613,7 @@ footer a:nth-child(2) img {
     flex-direction:column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap:4rem;
-   
+    gap:2rem;
 }
 .footer-right {
     align-self:flex-end;
