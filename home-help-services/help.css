@@ -845,6 +845,7 @@ footer .wrapper {
     right:0;
     top:calc(100% + 0.5rem);
     padding:1.5rem;
+    padding-block:1.5rem !important;
     background-color:white;
     box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.1);
     display:grid;
@@ -867,9 +868,11 @@ footer .wrapper {
     display:flex;
     flex-direction: column;
     gap:0.5rem;
+
 }
 .dropdown-links .dropdown-heading a {
     font-weight:700 !important;
+
 }
 .dropdown-links a {
     font-weight:500 !important; 
@@ -895,6 +898,11 @@ footer .wrapper {
 }
 .dropdown > a {
     font-weight:500 !important;
+    
+}
+.link {
+    font-size:14px !important;
+
 }
 .menu {
     width:50px !important;
@@ -930,7 +938,7 @@ footer .wrapper {
 @media (max-width:630px) {
     .dropdown-menu {
         grid-template-columns: 1fr;
-        gap:2rem;
+        gap:1rem;
     }
 }
 
