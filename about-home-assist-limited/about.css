@@ -954,6 +954,11 @@ h2 {
     align-items: center;
     gap:1rem;
 }
+.jointly-logo {
+    width:200px;
+    transform:translate(0.5rem, 1rem)
+}
+
 @media (max-width:700px) {
     .jointly .wrapper {
         padding-inline:2rem;
