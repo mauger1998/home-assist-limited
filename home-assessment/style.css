@@ -368,8 +368,8 @@ main .wrapper p:nth-of-type(2) {
 }
 .link {
     font-size:14px !important;
-
 }
+
 .menu {
     width:50px !important;
     display:none;
@@ -378,7 +378,7 @@ main .wrapper p:nth-of-type(2) {
     display:block !important;
 }
 .dropdown:nth-of-type(1) img {
-    width:50px;
+    width:50px !important;
     cursor:pointer;
 }
 .button-button {
