@@ -946,19 +946,17 @@ footer .wrapper {
 
 .partners-titles h2 {
     font-size:250px;
-    font-size:max(250px, 20vw);
-    font-size:14.5dvw;
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:0;
+    font-size:clamp(64px, 14vw,  125px);
     color:var(--blue);
     line-height:0.9;
     font-weight:800;
     letter-spacing: 0.25rem;
+    max-width:10ch;;
+    text-align:center;
+    align-self:center !important;
 }
 h2 span {
-    width:100%;
+    width:75%;
     display:flex;
     gap:4rem; 
 }
@@ -978,13 +976,21 @@ span img {
 }
 .partners-titles {
     width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.partners-titles img {
+    width:150px;
+    margin-block-end:1rem;
 }
 .partners-section .wrapper {
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    gap:4rem;
+    /* gap:4rem; */
     padding-top:2rem;
 }
 .partners-section .wrapper button {
@@ -994,54 +1000,46 @@ span img {
 
 .partners-content {
     display:flex;
-    gap:4rem;
-}
-.partners-left,
-.partners-right {
-    display:flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
-    gap:2rem;
-    width:50%;
-    justify-content: space-between;
+    gap:4rem;
+    width:100%;
 }
-.partners-left p,
-.partners-right p {
+
+.partners-content p {
     line-height:1.5;
     font-weight:400 !important;
     font-size:var(--text);
     /* text-justify: inter-word; */
-    text-align:justify;
+    text-align:center;
+    margin-block-start:2rem;
+    text-wrap:balance;
+    max-width:50ch;
 }
-.partners-content img {
-    width:200px;
-}
-@Media (max-width:1025px) {
-    .partners-content {
-        flex-direction: column;
-        align-items: flex-start;
-        gap:2rem;
-    }
-}
-@Media (max-width:700px) {
+
+@media (max-width:700px) {
     .partners-section .wrapper {
         padding-inline:2rem;
     }
-    h2 span {
-        gap:2rem;
-    }
 }
-@Media (max-width:500px) {
+@media (max-width:500px) {
     .partners-section .wrapper {
         padding-inline:1rem;
+        
     }
+    .partners-titles h2 {
+       
+        font-size:clamp(40px, 14vw,  64px);
+       
+    }
+    
     .partners-content p {
-        font-size:var(--mobile-text);
-    }
-    h2 span {
-        gap:1rem;
+        max-width:100% !important;
     }
 }
+
+
 
 /* Autumn */
 
