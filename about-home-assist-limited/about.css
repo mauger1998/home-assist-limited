@@ -706,6 +706,8 @@ footer .wrapper {
     align-items: flex-end;
     gap:2rem;
     align-self:flex-end;
+    text-align:center;
+
 }
 @media (max-width:1050px) {
     .footer-top {
@@ -737,6 +739,8 @@ footer .wrapper {
         align-items: center;
         justify-content: center;
         width:100%;
+        text-align:center;
+
     }
 }
 

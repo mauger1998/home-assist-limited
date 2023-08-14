@@ -571,6 +571,9 @@ footer .wrapper {
     align-items: flex-end;
     gap:2rem;
     align-self:flex-end;
+    text-align:center;
+    text-align:center;
+
 }
 @media (max-width:1050px) {
     .footer-top {
@@ -603,6 +606,8 @@ footer .wrapper {
         align-items: center;
         justify-content: center;
         width:100%;
+        text-align:center;
+
     }
 }
 
@@ -1087,6 +1092,9 @@ span img {
     width:50%;
 }
 
+.autumn-left img {
+    width:200px;
+}
 .autumn-left button {
     background-color:var(--blue);
     color:white;
