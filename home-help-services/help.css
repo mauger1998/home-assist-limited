@@ -707,7 +707,7 @@ footer .wrapper {
     transform: translateY(-50%);
 }
 .answer p {
-    padding-inline: 2rem;
+    padding: 2rem;
     transition: 500ms;
     font-weight: 500 !important;
 }
@@ -1119,98 +1119,6 @@ span img {
     }
 }
 
-/* More Autumn */
-
-.more-autumn-section {
-    background-image: linear-gradient(#030303a7, #030303a7),
-        url(../service-autumn/graham-durham-xPt9wF2phfI-unsplash1.png);
-}
-.more-autumn-section .wrapper {
-    display: flex;
-    align-items: flex-end;
-    gap: 4rem;
-}
-.more-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    gap: 2rem;
-    padding-bottom: 0.8rem;
-}
-.more-right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    gap: 2rem;
-}
-.more-left h2 {
-    font-size: 75px;
-    color: white;
-    line-height: 1 !important;
-}
-.more-right p {
-    font-size: var(--text);
-    color: white;
-    font-weight: 400 !important;
-}
-.more-right > p:nth-of-type(1) {
-    font-size: var(--text);
-    color: white;
-    font-weight: 400 !important;
-    line-height: 1.5;
-}
-.autumn-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-.autumn-list p {
-    line-height: 1.2;
-}
-@media (max-width: 1025px) {
-    .more-autumn-section .wrapper {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .more-right,
-    .more-left {
-        width: 100%;
-    }
-    .more-left h2 {
-        font-size: 60px;
-    }
-}
-@media (max-width: 700px) {
-    .more-autumn-section .wrapper {
-        padding-inline: 2rem;
-    }
-}
-@media (max-width: 500px) {
-    .more-autumn-section .wrapper {
-        padding-inline: 1rem;
-    }
-
-    .more-left h2 {
-        font-size: 50px;
-    }
-    .more-right > p:nth-of-type(1) {
-        font-size: var(--mobile-text);
-        color: white;
-        font-weight: 200;
-        line-height: 1.5;
-    }
-
-    .more-right {
-        gap: 2rem;
-    }
-    .autumn-list {
-        grid-template-columns: 1fr;
-    }
-}
 h1,
 h2 {
     line-height: 1 !important;
