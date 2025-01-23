@@ -1,57 +1,59 @@
-const URL = "https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'teamMember'%5D%7B%0A%20%20position%2C%0A%20%20name%2C%0A%20%22imageUrl%22%3A%20image.asset-%3Eurl%0A%7D"
+const URL =
+    "https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22teamMember%22%5D%20%7C%20order(orderRank%20asc)%20%7B%0A%20%20...%2C%0A%20%20'imageUrl'%3A%20image.asset-%3Eurl%0A%7D%20%0A"
 
-  fetch(URL)
-        .then((res) => res.json())
-        .then(({ result }) => {
-          const grid = document.querySelector(".meet-team-grid")
+fetch(URL)
+    .then((res) => res.json())
+    .then(({ result }) => {
+        const grid = document.querySelector('.meet-team-grid')
 
-          result.forEach((result, index) => {
-            const gridItem = document.createElement("div")
-            gridItem.classList.add("team-item")
+        result.forEach((result, index) => {
+            const gridItem = document.createElement('div')
+            gridItem.classList.add('team-item')
             grid.appendChild(gridItem)
-            const gridImage = document.createElement("img")
+            const gridImage = document.createElement('img')
             gridImage.src = result.imageUrl
             gridItem.appendChild(gridImage)
-            const memberName = document.createElement("p")
+            const memberName = document.createElement('p')
             memberName.textContent = result.name
             gridItem.appendChild(memberName)
-            const memberPosition = document.createElement("p")
+            const memberPosition = document.createElement('p')
             memberPosition.textContent = result.position
             gridItem.appendChild(memberPosition)
-            
-})
-        
-})
 
-const URLTWO = "https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'teamImage'%5D%20%7B%0A%20%20%22imageUrl%22%3A%20image.asset-%3Eurl%0A%7D%0A"
+            if (result.bio !== undefined) {
+                const memberBio = document.createElement('p')
+                memberBio.textContent = result.bio
+                gridItem.appendChild(memberBio)
+                console.log(result.bio)
+            }
+        })
+    })
 
+const URLTWO =
+    "https://1t8q0n0t.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'teamImage'%5D%20%7B%0A%20%20%22imageUrl%22%3A%20image.asset-%3Eurl%0A%7D%0A"
 
 fetch(URLTWO)
-.then((res) => res.json())
-.then(({ result }) => {
-    const secondRight = document.querySelector(".second-right")
+    .then((res) => res.json())
+    .then(({ result }) => {
+        const secondRight = document.querySelector('.second-right')
 
-    console.log(result[0].imageUrl)
-
-    secondRight.style.backgroundImage = `linear-gradient(to top, #FFFFFF, #FFFFFF00 10%), linear-gradient(to right, #FFFFFF, #FFFFFF00 10%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 10%), url(${result[0].imageUrl})`
-})
+        secondRight.style.backgroundImage = `linear-gradient(to top, #FFFFFF, #FFFFFF00 10%), linear-gradient(to right, #FFFFFF, #FFFFFF00 10%), linear-gradient(to bottom, #FFFFFF, #FFFFFF00 10%), url(${result[0].imageUrl})`
+    })
 
 // Dropdown
 
-document.addEventListener("click", (e) => {
-  const isDropdownButton = e.target.matches("[data-dropdown-button]")
+document.addEventListener('click', (e) => {
+    const isDropdownButton = e.target.matches('[data-dropdown-button]')
 
-  if (!isDropdownButton && e.target.closest("[data-dropdown]") != null) return
-  let currentDropdown
-  if (isDropdownButton) {
-      currentDropdown = e.target.closest("[data-dropdown]")
-      currentDropdown.classList.toggle("active")
-  }
+    if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
+    let currentDropdown
+    if (isDropdownButton) {
+        currentDropdown = e.target.closest('[data-dropdown]')
+        currentDropdown.classList.toggle('active')
+    }
 
-  document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
-      if (dropdown === currentDropdown) return
-      dropdown.classList.remove("active")
-  })
+    document.querySelectorAll('[data-dropdown].active').forEach((dropdown) => {
+        if (dropdown === currentDropdown) return
+        dropdown.classList.remove('active')
+    })
 })
-
-
