@@ -54,6 +54,14 @@ footer {
     width: 100%;
     max-width: 1512px;
     padding: 6rem 4rem;
+
+    @media (max-width: 700px) {
+        padding-inline: 2rem;
+    }
+
+    @media (max-width: 500px) {
+        padding-inline: 1rem;
+    }
 }
 
 p {
