@@ -1,0 +1,205 @@
+.natasha-section {
+  background-color: #000032;
+}
+.natasha-section .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.natasha-section .wrapper .left {
+  width: calc(50% + 4rem);
+  margin-inline-start: -4rem;
+  margin-block: -6rem;
+  display: flex;
+  align-self: stretch;
+}
+.natasha-section .wrapper .left img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.natasha-section .wrapper .right {
+  width: 50%;
+}
+.natasha-section .wrapper .right h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  color: white;
+}
+.natasha-section .wrapper .right p {
+  font-size: 18px;
+  line-height: 1.75;
+  color: white;
+  margin-block: 1.5rem 0;
+}
+.natasha-section .wrapper .right h5 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.75;
+  margin-block: 1.5rem 0;
+  color: white;
+}
+.natasha-section .wrapper .right .button-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-block: 3rem 0;
+}
+.natasha-section .wrapper .right .button-wrap a button {
+  border: 1px solid white;
+}
+.natasha-section .wrapper .right .button-wrap a:last-child button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+@media (max-width: 900px) {
+  .natasha-section .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .natasha-section .wrapper .left,
+  .natasha-section .wrapper .right {
+    width: 100%;
+  }
+  .natasha-section .wrapper .left {
+    margin-block-end: 0;
+    width: calc(100% + 8rem);
+    margin-inline: -4rem;
+  }
+}
+@media (max-width: 700px) {
+  .natasha-section .wrapper .left {
+    margin-inline: -2rem;
+  }
+  .natasha-section .wrapper .right h2 {
+    font-size: 25px;
+  }
+  .natasha-section .wrapper .right p {
+    font-size: 16px;
+  }
+  .natasha-section .wrapper .right h5 {
+    font-size: 16px;
+  }
+  .natasha-section .wrapper .right .button-wrap {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+  .natasha-section .wrapper .right .button-wrap button {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .natasha-section .wrapper .left {
+    margin-inline: -1rem;
+  }
+}
+
+/************ Second Section *********/
+.second-section {
+  background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0) 50%), linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0) 50%), linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0) 50%), url(../halo-png/gsy-halo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.second-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.second-section .wrapper h2 {
+  font-size: var(--heading-two);
+}
+.second-section .wrapper h3 {
+  font-size: var(--sub-heading);
+  font-weight: 700;
+  width: 100%;
+  max-width: 60ch;
+}
+.second-section .wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  max-width: 60ch;
+  line-height: 1.5;
+  margin-block: 1.5rem 0;
+}
+.second-section .wrapper h5 {
+  font-size: 16px !important;
+  font-weight: 600;
+  width: 100%;
+  max-width: 60ch;
+  line-height: 1.5;
+  margin-block: 0.75rem 0;
+}
+.second-section .wrapper button {
+  background-color: var(--blue);
+  color: white;
+  margin-top: 3rem;
+}
+.second-section .list-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+.second-section .list-main .list-one {
+  background-color: rgba(255, 255, 255, 0.6196078431);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2rem;
+  width: 100%;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+.second-section .button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+@media (max-width: 1050px) {
+  .second-section .wrapper {
+    padding-inline: 4rem;
+    background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0) 50%), linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0) 50%), linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0) 50%), url(../halo-png/boris.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 700px) {
+  .second-section .wrapper {
+    padding-inline: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .second-section .wrapper {
+    padding-inline: 1rem;
+  }
+  .second-section h2 {
+    font-size: var(--mobile-heading-two);
+  }
+  .second-section .wrapper > p:nth-of-type(2) {
+    font-size: var(--mobile-sub-heading);
+  }
+  .second-section .list-main p:nth-of-type(1) {
+    font-size: var(--mobile-sub-heading);
+  }
+  .second-section .list-main p:nth-of-type(2) {
+    font-size: var(--mobile-text);
+  }
+}
+@media (max-width: 404px) {
+  .second-section .list-main {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}/*# sourceMappingURL=newStyles.css.map */

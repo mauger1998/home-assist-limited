@@ -54,6 +54,14 @@ footer {
     width: 100%;
     max-width: 1512px;
     padding: 6rem 4rem;
+
+    @media (max-width: 700px) {
+        padding-inline: 2rem;
+    }
+
+    @media (max-width: 500px) {
+        padding-inline: 1rem;
+    }
 }
 
 p {
@@ -421,8 +429,9 @@ main .wrapper p:nth-of-type(2) {
 .blue-banner-section .wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-block: 2rem;
+    gap: 3rem;
 }
 .blue-banner-section .wrapper img {
     width: 12rem;
@@ -487,7 +496,7 @@ main .wrapper p:nth-of-type(2) {
         background-position: right;
     }
     .blue-banner-section .wrapper img {
-        width: 100%;
+        /* width: 100%; */
     }
 }
 @media (max-width: 500px) {

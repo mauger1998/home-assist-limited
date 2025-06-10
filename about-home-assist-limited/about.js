@@ -24,7 +24,6 @@ fetch(URL)
                 const memberBio = document.createElement('p')
                 memberBio.textContent = result.bio
                 gridItem.appendChild(memberBio)
-                console.log(result.bio)
             }
         })
     })
