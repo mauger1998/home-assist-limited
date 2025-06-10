@@ -87,6 +87,9 @@ main {
                     transition: scale 0.3s ease-in-out;
                 }
             }
+            @media (max-width: 400px) {
+                grid-template-columns: 1fr;
+            }
         }
     }
 }
@@ -100,11 +103,21 @@ main {
     background-position: center;
     background-repeat: no-repeat;
 
+    @media (max-width: 700px) {
+        background-image: linear-gradient(#ffffff90, #ffffff90 100%),
+            url('./webp/image 25.webp');
+    }
+
     &:nth-child(even) {
         background-image: linear-gradient(to top, #ffffff, #ffffff00 40%),
             linear-gradient(to bottom, #ffffff, #ffffff00 40%),
             linear-gradient(to left, #ffffff, #ffffff00 100%),
             url('./webp/image 26.webp');
+
+        @media (max-width: 700px) {
+            background-image: linear-gradient(#ffffff90, #ffffff90 100%),
+                url('./webp/image 26.webp');
+        }
 
         .text {
             width: 100%;
@@ -284,7 +297,7 @@ button {
             }
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 1024px) {
             flex-direction: column-reverse;
             align-items: flex-start;
             .left {

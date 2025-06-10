@@ -91,6 +91,11 @@ main .wrapper .images .mask img {
      object-fit: cover;
   transition: scale 0.3s ease-in-out;
 }
+@media (max-width: 400px) {
+  main .wrapper .images {
+    grid-template-columns: 1fr;
+  }
+}
 
 .alternate-section {
   background-image: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0) 40%), linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0) 40%), linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0) 100%), url("./webp/image 25.webp");
@@ -98,8 +103,18 @@ main .wrapper .images .mask img {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media (max-width: 700px) {
+  .alternate-section {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5647058824), rgba(255, 255, 255, 0.5647058824) 100%), url("./webp/image 25.webp");
+  }
+}
 .alternate-section:nth-child(even) {
   background-image: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0) 40%), linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0) 40%), linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0) 100%), url("./webp/image 26.webp");
+}
+@media (max-width: 700px) {
+  .alternate-section:nth-child(even) {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5647058824), rgba(255, 255, 255, 0.5647058824) 100%), url("./webp/image 26.webp");
+  }
 }
 .alternate-section:nth-child(even) .text {
   width: 100%;
@@ -274,7 +289,7 @@ button {
      object-fit: cover;
   border-radius: 1.5rem;
 }
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   .installed-by-halo-section .wrapper {
     flex-direction: column-reverse;
     align-items: flex-start;
